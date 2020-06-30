@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <TextView
+        android:id="@+id/clinicalevent_item_jlr"
+        style="@style/ClassicTextSecondary"
+        tools:text="jlr" />
+
+    <EditText
+        android:id="@+id/clinicalevent_item_sjms"
+        style="@style/ClassicEdit.MatchWrap" />
+
+    <include layout="@layout/layout_item_bar_image" />
+
+    <include layout="@layout/layout_item_bar_image_copy" />
+
+    <View style="@style/ClassicDividerViewMatchExactly.Big" />
+</LinearLayout>

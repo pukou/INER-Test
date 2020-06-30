@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.user.HandOverActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout
+        android:id="@+id/id_ll_controller"
+        style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+        <LinearLayout
+            android:id="@+id/slt_stime_ly"
+            style="@style/ClassicLinearV.AutoWrap">
+
+            <TextView
+                style="@style/ClassicTextTertiaryColored"
+                android:text="@string/care_record_datetime" />
+
+            <TextView
+                android:id="@+id/nurse_datetime_txt"
+                style="@style/ClassicTextTertiary"
+                tools:text="dasdas" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearV.AutoWrap">
+
+            <TextView
+                style="@style/ClassicTextTertiaryColored"
+                android:text="@string/hand_over_jsbq"
+                tools:text="dasddas" />
+
+            <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+                android:id="@+id/id_spinner_layout"
+                style="@style/ClassicSpinner" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/id_sv"
+        style="@style/ClassicScroll" />
+
+</LinearLayout>

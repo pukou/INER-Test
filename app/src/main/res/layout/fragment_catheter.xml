@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe">
+
+        <LinearLayout
+            android:id="@+id/catheter_person_ll"
+            style="@style/MatchAuto.Horizontal">
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView.AutoMatch"
+                tools:listitem="@layout/item_list_text_two_vert_secondary_selected" />
+
+            <LinearLayout
+                android:id="@+id/catheter_panel"
+                style="@style/ClassicLinearV.AutoMatch"
+                android:layout_weight="3">
+
+                <ListView
+                    android:id="@+id/id_lv_2"
+                    style="@style/ClassicListView.MatchAuto"
+                    tools:listitem="@layout/item_list_catheter_record" />
+
+                <LinearLayout style="@style/ClassicLinearV.MatchAuto">
+
+                    <TextView
+                        style="@style/ClassicTextSecondary"
+                        android:text="记录历史(左滑取消)" />
+
+
+                    <com.bsoft.mob.ienr.dynamicui.catheterDrainage.LeftSlideDeleteListView
+                        android:id="@+id/catheter_history_list"
+                        tools:listitem="@layout/item_list_catheter_history"
+                        style="@style/ClassicListView" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

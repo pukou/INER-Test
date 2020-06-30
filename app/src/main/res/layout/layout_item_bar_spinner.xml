@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+
+    <TextView
+        android:id="@+id/id_tv_for_bar_spinner"
+        style="@style/ClassicTextSecondaryColored"
+        android:text="时间点：" />
+
+    <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+        android:id="@+id/id_spinner_layout"
+        style="@style/ClassicSpinner.AutoWrap" />
+
+    <ImageView
+        android:id="@+id/id_iv_for_bar_spinner"
+        style="@style/ClassicImage.Colored"
+        android:src="@drawable/ic_date_range_black_24dp" />
+</LinearLayout>

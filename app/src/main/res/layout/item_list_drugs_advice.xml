@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <LinearLayout
+        android:id="@+id/view"
+        style="@style/ClassicListItem"
+        android:padding="@dimen/classic_item_comm_padding_primary">
+
+        <TextView
+            android:id="@+id/ZXZT"
+            style="@style/ClassicTextSecondary"
+            tools:text="ZXZT" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="1454311111312311adasdaDSADASDASDASDADSA1" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/ClassicTextSecondary"
+            tools:text="time" />
+        <!-- 可点击 该xml item 点击和 checkbox 点击 功能分离 -->
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@style/ClassicCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boxView"
+        android:padding="@dimen/classic_item_comm_padding_primary"
+        style="@style/ClassicLinearV.MatchWrap">
+
+        <TextView
+            android:id="@+id/allName"
+            style="@style/ClassicTextSecondary"
+            tools:text="allName" />
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                android:id="@+id/JLXX"
+                style="@style/ClassicTextSecondary"
+                tools:text="JLXX" />
+
+            <TextView
+                android:id="@+id/SLXX"
+                style="@style/ClassicTextSecondary"
+                tools:text="SLXX" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                android:id="@+id/KSXX"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="KSXX" />
+
+            <TextView
+                android:id="@+id/JSXX"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="JSXX" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <include layout="@layout/layout_item_bar_spinner_check" />
+    <!-- 升级编号【56010032】============================================= start
+         生命体征 默认显示所有病区病人、体征输入
+         ================= Classichu 2017/11/20 16:50
+         -->
+    <include layout="@layout/layout_checkable_check_3" />
+    <!-- =============================================================== end -->
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <FrameLayout style="@style/ClassicFrame">
+
+            <LinearLayout style="@style/ClassicLinearH">
+
+                <ListView
+                    android:id="@+id/id_lv"
+                    style="@style/ClassicListView.AutoMatch" />
+
+
+                <android.support.v4.widget.NestedScrollView
+                    style="@style/ClassicScroll.AutoMatch"
+                    android:layout_width="0dp"
+                    android:layout_weight="3">
+
+                    <LinearLayout
+                        android:id="@+id/id_ll_container"
+                        style="@style/ClassicLinearV" />
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+
+            <!-- 体温小键盘支持 start01 -->
+            <android.inputmethodservice.KeyboardView
+                android:id="@+id/keyboard_view"
+                style="@style/MatchWrap"
+                android:layout_gravity="bottom"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@color/windowBackground"
+                android:keyTextColor="@color/colorPrimary"
+                android:keyBackground="@drawable/keyboard_btn_bg"
+                android:keyPreviewLayout="@layout/keyboard_preview"
+                android:paddingTop="1dp"
+                android:shadowColor="#ffffff"
+                android:shadowRadius="0.0"
+                android:visibility="gone" />
+            <!-- 体温小键盘支持 end01 -->
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

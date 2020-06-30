@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearH.MatchWrap">
+    <!--可点击 必须可点击-->
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/ClassicCheck" />
+
+    <EditText
+        android:id="@+id/nurseplan_evluate"
+        style="@style/ClassicEdit.AutoWrap"
+        android:inputType="textMultiLine"
+        android:maxLines="2" />
+
+</LinearLayout>

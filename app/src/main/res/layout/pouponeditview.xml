@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/classic_item_comm_margin_tertiary"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ClassicTextAppearanceSecondary"
+
+        tools:text="121213123" />
+
+    <LinearLayout
+        style="@style/ClassicLinearH.AutoWrap"
+        android:layout_marginLeft="@dimen/classic_item_comm_margin_tertiary"
+        android:layout_marginRight="@dimen/classic_item_comm_margin_tertiary"
+        android:background="@drawable/selector_classic_bg_edit">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:lines="1"
+            android:padding="@dimen/classic_item_comm_padding_primary"
+            android:singleLine="true"
+            android:textAppearance="@style/ClassicTextAppearanceSecondary"
+            tools:text="dsadasddsadasas" />
+
+        <ImageView
+            android:id="@+id/down"
+            style="@style/ClassicImage.Colored"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+    </LinearLayout>
+</LinearLayout>

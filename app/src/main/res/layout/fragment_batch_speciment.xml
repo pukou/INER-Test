@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <include layout="@layout/layout_checkable_check" />
+
+
+
+    <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+        android:id="@+id/id_spinner_layout_type"
+        style="@style/ClassicSpinner" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe">
+
+        <LinearLayout style="@style/ClassicLinearH">
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView.AutoMatch" />
+
+
+            <LinearLayout
+                android:id="@+id/speciment_content_ll"
+                style="@style/ClassicLinearV.AutoMatch"
+                android:layout_weight="3">
+
+                <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+                    android:id="@+id/id_spinner_layout"
+                    style="@style/ClassicSpinner" />
+
+                <include layout="@layout/layout_bar_date_double_icon" />
+
+                <ListView
+                    android:id="@+id/id_lv_2"
+                    style="@style/ClassicListView.MatchAuto" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

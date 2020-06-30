@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--距离左侧 右侧 上侧  -2px的高度 变相去掉线 -->
+    <item
+        android:left="-2dp"
+        android:right="-2dp"
+        android:top="-2dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/classic_divider_height_secondary"
+                android:color="@color/classicDivider" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>

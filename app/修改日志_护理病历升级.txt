@@ -1,0 +1,72 @@
+/************************************5.4版修改内容**************************************************************************/
+1.眉栏添加当前选中病人
+	a.修改actionbar.xml.见注释"护理病历升级时修改 start"与"护理病历升级时修改 end "之间。
+		主要在原来的标题textview控件下加一个用来显示病人信息的textview控件，并使用纵向线性布局将两者包围起来
+	b.修改com.bsoft.mob.ienr.view包下的BsoftActionBar.java.添加对布局文件中增加的控件的处理，
+		所有"病人信息start"与”病人信息end"之间的代码为本次添加，共三处。
+	c.在所有需要显示当前选中病人的窗口添加以下代码：
+		actionBar.setPatient(application.sickPersonVo.BRCH + application.sickPersonVo.BRXM);
+		其中：appilcation（有些界面为app）可在各界面的onCreate()方法中通过 app = (AppApplication) getApplication()获取（如果原来未初始化的话）
+		
+2.去除单人体征录入界面的当前病人【第一个修改完成后已不需要此功能】
+	a.修改布局文件fragment_plifesymptom.xml.将id为name的TextView删掉，其外层的LinearLayout也可删掉,ScrollView中只保留id为view的LinearLayout.
+	b.修改com.bsoft.mob.ienr.fragment.user包下的PLifeSymptomFragment.java文件.先删去name变量，然后将所有关于name的报错代码全部删掉（注：setName()方法及其引用一并删除）
+		
+3.添加与新版静配中心的相互打开
+	a.修改com.bsoft.mob.ienr.activity包下的LoginActivity.java。
+		所有"//移动其他app调用移动护理 start"与"移动其他app调用移动护理 end"注释之间的代码为本次修改的部分。共4处
+		
+4.RFID功能开启(目前只有识凌系列提供了RFID扫描实现）
+	a.修改com.bsoft.mob.ienr.barcode包下BayBarG3CodeImpl.java文件，添加对RFID的支持.所有“RFID支持 start”与“RFID支持 end”注释之间的内容为本次修改，共3处。
+	b.修改com.bsoft.mob.ienr.barcode包下AnalyseCodeService.java文件。所有“RFID支持 start”与“RFID支持 end”注释之间为本次修改，共1处。
+	c.修改布局文件fragment_sickpersoninfo.xml。将包含id为text的linearlayout的visibility属性从gone改为visible
+	d.修改com.bsoft.mob.ienr.api包下的KernelApi.java文件。主要向BindPatient和UnBindPatient两个方法中添加bqid(病区代码)参数，并添加检查病人是否绑定RFID的接口。见“RFID支持 start”与“RFID支持 end”之间代码，共3处。
+	e.修改com.bsoft.mob.ienr.fragment.user包下SickPersonInfoFragment.java文件。所有“RFID支持 start”与“RFID支持 end”注释之间为本次修改，共5处
+	f.服务端修改相应修改间服务端修改日志。
+	
+5.标本批量采集可随意注销某类项目
+	a.修改com.bsoft.mob.ienr.fragment包下的BatchSpecimenFragment.java文件。详见“随意注销某类项目 start”与“随意注销某类项目 end”注释之间，共3处。
+	
+6.口服单，输液单界面起始时间和结束时间段自动根据当前时间变动
+	a.修改com.bsoft.mob.ienr.fragment包下OralActionFragment.java文件中的initTime方法。详见“开始时间和结束时间段根据当前时间自动适应 start”与“开始时间和结束时间段根据当前时间自动适应 end”注释之间，共一处。
+	b.修改com.bsoft.mob.ienr.fragment包下TransfuseActionFragment.java文件中的initTime方法。详见“开始时间和结束时间段根据当前时间自动适应 start”与“开始时间和结束时间段根据当前时间自动适应 end”注释之间，共一处。
+	
+7.自定义Toast，连续多次调用Toast提示只提示一次
+	a.导入com.bsoft.mob.ienr.view包下的BSToast类
+	b.替换所有的调用系统自带Toast.
+	
+8.dialog单实例，以使连续调用dialog是不至于出现某个dialog没有被dismiss掉【功能尚不稳定，不能在短时间内同时调用】
+	a.修改om.bsoft.mob.ienr.fragment包下的MyDialogFragment.java文件。详见"dialog单实例 start"与”dialog单实例 end“注释之间，共5处
+	
+9.体温小键盘
+	a.添加布局文件temperature.xml.
+	b.com.bsoft.mob.util包下添加KeyboardUtil类
+	c.修改体征复测类：com.bsoft.mob.ienr.view包下的DoubleCheckView.java文件。详见“体温小键盘支持 start”与“体温小键盘支持 end”注释之间，共3处.
+	d.修改特殊控件类：com.bsoft.mob.ienr.view包下的ExceptView.java文件。详见详见“体温小键盘支持 start”与“体温小键盘支持 end”注释之间，共4处.
+	e.修改批量体征录入界面布局文件fragment_lifesymptom.xml.详见详见“体温小键盘支持 start”与“体温小键盘支持 end”注释之间，共1处.
+	f.修改批量体征录入处理类:com.bsoft.mob.ienr.fragment包下的LifeSymptomFragment.java文件.详见详见“体温小键盘支持 start”与“体温小键盘支持 end”注释之间，共4处.
+	g.修改单人体征录入界面布局文件fragment_plifesymptom.xml.详见“体温小键盘支持 start”与“体温小键盘支持 end”注释之间，共1处.
+	h.修改单人体征录入处理类，com.bsoft.mob.ienr.fragment.user包下的PLifeSymptomFragment.java文件.详见“体温小键盘支持 start”与“体温小键盘支持 end”注释之间，共4处.
+	i.修改om.bsoft.mob.lib.menus包下的SlidingActivityHelper.java中的onKeyUp方法，以使在松开返回键后可以收起小键盘。详见“体温小键盘支持 start”与“体温小键盘支持 end”注释之间，共1处.
+		
+10.药品核对界面扫描条码后部分设备可能出现闪退
+	日志提示：
+		The content of the adapter has changed but ListView did not receive a notification. 
+		Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. 
+		[in ListView(16908298, class com.handmark.pulltorefresh.library.PullToRefreshListView$InternalListViewSDK9) 
+		with Adapter(class android.widget.HeaderViewListAdapter)]
+	问题分析：此问题为核对成功后，list中删除了核对成功的数据但没有手动调用适配器的notifyDataSetChanged()方法来通知界面的ListView。
+	解决方案：在内部了CheckTask的onPostExecute方法中添加一行代码：adviceCheckAdpter.notifyDataSetChanged();详见com.bsoft.mob.ienr.fragment包下的AdviceCheckFragment.java文件中的“通知界面 start”与”通知界面 end“注释之间.
+	
+11.网络优化
+
+
+12.Post方法改造
+
+
+13.评估单添加检查项目有无填写功能
+
+
+14.评估单添加下拉选项功能
+	
+	

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="@android:integer/config_shortAnimTime" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+    <item android:state_activated="true">
+        <layer-list>
+            <item android:left="@dimen/classic_layer_list_item_hide_divider_primary" android:right="@dimen/classic_layer_list_item_hide_divider_primary" android:top="@dimen/classic_layer_list_item_hide_divider_primary">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/classic_divider_height_secondary" android:color="@color/classicDivider" />
+                    <solid android:color="@color/classicItemBgColoredSelected" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:left="@dimen/classic_layer_list_item_hide_divider_primary" android:right="@dimen/classic_layer_list_item_hide_divider_primary" android:top="@dimen/classic_layer_list_item_hide_divider_primary">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/classic_divider_height_secondary" android:color="@color/classicDivider" />
+                    <solid android:color="@color/classicItemBgColoredSelected" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:left="@dimen/classic_layer_list_item_hide_divider_primary" android:right="@dimen/classic_layer_list_item_hide_divider_primary" android:top="@dimen/classic_layer_list_item_hide_divider_primary">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/classic_divider_height_secondary" android:color="@color/classicDivider" />
+                    <solid android:color="@color/classicItemBgColoredSelected" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:left="@dimen/classic_layer_list_item_hide_divider_primary" android:right="@dimen/classic_layer_list_item_hide_divider_primary" android:top="@dimen/classic_layer_list_item_hide_divider_primary">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/classic_divider_height_secondary" android:color="@color/classicDivider" />
+                    <solid android:color="@color/classicItemBgColoredSelected" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:left="@dimen/classic_layer_list_item_hide_divider_primary" android:right="@dimen/classic_layer_list_item_hide_divider_primary" android:top="@dimen/classic_layer_list_item_hide_divider_primary">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/classic_divider_height_secondary" android:color="@color/classicDivider" />
+                    <solid android:color="@color/classicItemBgColoredSelected" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:left="@dimen/classic_layer_list_item_hide_divider_primary" android:right="@dimen/classic_layer_list_item_hide_divider_primary" android:top="@dimen/classic_layer_list_item_hide_divider_primary">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/classic_divider_height_secondary" android:color="@color/classicDivider" />
+                    <solid android:color="@color/classicItemBgColored" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

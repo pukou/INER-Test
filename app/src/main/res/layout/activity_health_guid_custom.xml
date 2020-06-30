@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.user.HealthGuidCustomActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            style="@style/ClassicTextPrimary"
+            android:text="宣教类型：" />
+
+        <TextView
+            android:id="@+id/healthguid_custom_type"
+            style="@style/ClassicTextSecondary"
+            android:text="入院教育" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            style="@style/ClassicTextPrimary"
+            android:text="宣教项目：" />
+
+        <EditText
+            android:id="@+id/healthguid_custom_item"
+            style="@style/ClassicEdit.AutoWrap"
+            android:hint="请输入自定义内容"
+            android:inputType="textMultiLine"
+            android:maxLines="2" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_button_line" />
+
+</LinearLayout>

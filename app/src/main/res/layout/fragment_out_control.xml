@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <LinearLayout
+            android:id="@+id/out_control_content_ll"
+            style="@style/ClassicLinearV.MatchWrap">
+
+            <LinearLayout
+
+                style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+                <TextView
+                    android:id="@+id/out_control_name_txt"
+                    style="@style/ClassicTextSecondary"
+                    android:text="@string/out_control_name" />
+
+                <TextView
+                    android:id="@+id/out_control_with_txt"
+                    style="@style/ClassicTextPrimary"
+                    android:text="@string/out_control_with" />
+
+                <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+                    android:id="@+id/id_spinner_layout"
+                    style="@style/ClassicSpinner.AutoWrap" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/out_control_out_ll"
+                layout="@layout/layout_item_bar_image" />
+
+            <include
+                android:id="@+id/out_control_back_ll"
+                layout="@layout/layout_item_bar_image_copy" />
+
+            <EditText
+                android:id="@+id/out_control_record_edit"
+                style="@style/ClassicEdit.MatchWrap"
+                android:hint="@string/out_control_out_reason"
+                android:inputType="textMultiLine"
+                android:lines="2" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context="com.bsoft.mob.ienr.fragment.user.TraditionalNursingFragment">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+        <TextView
+            android:id="@+id/id_tv_for_bar_image"
+            style="@style/ClassicTextSecondaryColored"
+            android:text="时间：" />
+
+        <TextView
+            android:id="@+id/id_tv_2_for_bar_image"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="dasdasdasdasd" />
+
+        <ImageView
+            android:id="@+id/id_iv_for_bar_image"
+            style="@style/ClassicImage.Colored"
+            android:src="@drawable/ic_date_range_black_24dp" />
+        <!--可点击 必须可点击-->
+        <CheckBox
+            android:id="@+id/id_cb"
+            style="@style/ClassicCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_user_info"
+        style="@style/ClassicLinearV.MatchWrap">
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="住院号:" />
+
+            <TextView
+                android:id="@+id/id_tv_zyh"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="0011128" />
+
+
+            <TextView
+                android:id="@+id/id_tv_sex"
+                style="@style/ClassicTextSecondary"
+                tools:text="男" />
+
+            <TextView
+                android:id="@+id/id_tv_os_age"
+                style="@style/ClassicTextSecondaryColored"
+                android:text="年龄:" />
+
+            <TextView
+                android:id="@+id/id_tv_age"
+                style="@style/ClassicTextSecondary"
+                tools:text="34岁" />
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="中医诊断:" />
+
+            <TextView
+                android:id="@+id/id_tv_zyzd"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="中医诊断" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="护理方案:" />
+
+
+            <TextView
+                android:id="@+id/id_tv_hlfa"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="护理方案" />
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="开始时间:" />
+
+
+            <TextView
+                android:id="@+id/id_tv_kssj"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="开始时间" />
+
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="状态:" />
+
+            <TextView
+                android:id="@+id/id_tv_zt"
+                style="@style/ClassicTextSecondary"
+                tools:text="状态" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="结束时间:" />
+
+            <TextView
+                android:id="@+id/id_tv_jssj"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="结束时间" />
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="评价:" />
+
+            <TextView
+                android:id="@+id/id_tv_pj"
+                style="@style/ClassicTextSecondary"
+                tools:text="评价" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <FrameLayout style="@style/ClassicFrame">
+
+            <ExpandableListView
+                android:id="@+id/id_elv"
+                style="@style/ClassicExpandableListView"
+                tools:listitem="@layout/item_list_group_primary_icon" />
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

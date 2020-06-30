@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout
+        android:id="@+id/id_ll_controller"
+        style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+
+        <LinearLayout
+            android:id="@+id/slt_stime_ly"
+            style="@style/ClassicLinearH.AutoWrap">
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="@string/care_record_datetime" />
+
+            <TextView
+                android:id="@+id/nurse_datetime_txt"
+                style="@style/ClassicTextSecondary"
+                tools:text="dsadasdasda" />
+        </LinearLayout>
+
+        <!--可点击 必须能点击 -->
+        <CheckBox
+            android:id="@+id/care_record_page_cb"
+            style="@style/ClassicCheck"
+            android:text="@string/care_record_another_page" />
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/id_sv"
+        style="@style/ClassicScroll" />
+
+
+</LinearLayout>

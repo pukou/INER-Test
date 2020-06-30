@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_ll_item_bar"
+    style="@style/ClassicLinearControlBarPrimary.Bottom"
+    >
+
+    <TextView
+        android:id="@+id/id_tv"
+        style="@style/ClassicTextSecondaryColored"
+        tools:text="测试" />
+
+    <TextView
+        android:id="@+id/id_tv_2"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        tools:text="测试2" />
+
+    <TextView
+        android:id="@+id/id_tv_3"
+        style="@style/ClassicTextSecondaryColored"
+        tools:text="测试3" />
+
+</LinearLayout>

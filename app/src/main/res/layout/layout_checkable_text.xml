@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicCheckableBar">
+
+    <TextView
+        android:id="@+id/id_tv"
+        style="@style/ClassicCheckablePrimary.RightBottom"
+        tools:text="测试" />
+
+    <TextView
+        android:id="@+id/id_tv_2"
+        style="@style/ClassicCheckablePrimary.Bottom"
+        tools:text="测试2" />
+</LinearLayout>

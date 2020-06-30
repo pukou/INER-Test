@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="@android:integer/config_shortAnimTime" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/classicEditItemGrayBgDark" />
+            <corners android:radius="@dimen/classic_divider_radius_secondary" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/classicEditItemGrayBg" />
+            <stroke android:width="@dimen/classic_divider_height_secondary" android:color="@color/classicEditItemFocusBorderColor" />
+            <corners android:radius="@dimen/classic_divider_radius_secondary" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/classicEditItemGrayBg" />
+            <stroke android:width="@dimen/classic_divider_height_secondary" android:color="@color/classicEditItemFocusBorderColor" />
+            <corners android:radius="@dimen/classic_divider_radius_secondary" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/classicEditItemGrayBg" />
+            <stroke android:width="@dimen/classic_divider_height_secondary" android:color="@color/classicEditItemBorderColor" />
+            <corners android:radius="@dimen/classic_divider_radius_secondary" />
+        </shape>
+    </item>
+</selector>

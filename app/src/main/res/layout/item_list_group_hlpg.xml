@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+    <com.classichu.vectortextview.ClassicVectorTextView
+        android:id="@+id/id_tv"
+        style="@style/ClassicTextPrimary"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@drawable/selector_classic_icon_up_down"
+        android:drawablePadding="@dimen/classic_drawable_padding_primary"
+        android:padding="@dimen/classic_item_comm_padding_secondary"
+        app:classic_tint="@color/colorAccent"
+        tools:text="dasdasd" />
+
+    <LinearLayout
+        android:id="@+id/id_rg_contar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" />
+</LinearLayout>

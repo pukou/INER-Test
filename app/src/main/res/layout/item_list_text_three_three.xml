@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap"
+    android:background="@drawable/selector_classic_bg_click_tertiary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/id_tv_one"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="One_One_One_One_One_One_One_One_One" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/id_tv_two"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="two_two_two_two_two_two" />
+
+        <TextView
+            android:id="@+id/id_tv_three"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="three_three_three" />
+    </LinearLayout>
+
+
+</LinearLayout>

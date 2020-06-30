@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MessageActivity"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+
+    <TextView
+        android:id="@+id/msg_content"
+        style="@style/ClassicTextPrimary.MatchMatch"
+        tools:text="dasdasdas"
+
+        />
+
+</LinearLayout>

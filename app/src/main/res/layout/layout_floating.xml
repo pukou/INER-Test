@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--！！！未改-->
+    <ImageView
+        android:id="@+id/float_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="扫描按钮"
+        android:src="@drawable/img_sacner" />
+
+    <ImageView
+        android:id="@+id/float_set"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:contentDescription="蓝牙设置"
+        android:src="@drawable/floating_setting"
+        android:visibility="gone" />
+
+</LinearLayout>

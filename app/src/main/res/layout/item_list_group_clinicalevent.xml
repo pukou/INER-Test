@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ClassicLinearControlBarPrimary">
+
+    <com.classichu.vectortextview.ClassicVectorTextView
+        android:id="@+id/clinicalevent_name"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:drawableLeft="@drawable/selector_classic_icon_up_down"
+        app:classic_tint="@color/colorAccent"
+        android:text="临床事件" />
+
+    <TextView
+        android:id="@+id/clinicalevent_num"
+        style="@style/ClassicTextSecondaryColored"
+        android:text="10份" />
+
+    <ImageView
+        android:id="@+id/clinicalevent_save"
+        style="@style/ClassicImage.Colored"
+        android:contentDescription="保存"
+        android:src="@drawable/ic_save_black_24dp" />
+
+    <ImageView
+        android:id="@+id/clinicalevent_add"
+        style="@style/ClassicImage.Colored"
+        android:contentDescription="添加"
+        android:src="@drawable/ic_add_black_24dp" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_layout_double_time"
+    style="@style/ClassicLinearControlBarPrimary">
+
+
+    <LinearLayout
+        android:id="@+id/slt_plantime"
+        style="@style/ClassicLinearV.WrapWrap">
+
+        <TextView
+            android:id="@+id/plantime_title"
+            style="@style/ClassicTextTertiaryColored"
+
+            android:text="@string/advice_plandate" />
+
+        <TextView
+            android:id="@+id/plantime"
+            style="@style/ClassicTextTertiary"
+
+            tools:text="31231231" />
+    </LinearLayout>
+
+    <include
+        style="@style/ClassicLinearH.AutoWrap"
+        layout="@layout/layout_radio_group_two" />
+
+    <ImageView
+        android:id="@+id/search"
+        style="@style/ClassicImage"
+        android:src="@drawable/selector_classic_icon_search" />
+    <!--可点击 必须可点击-->
+    <CheckBox
+        android:id="@+id/advice_direction"
+        style="@style/ClassicCheck" />
+</LinearLayout>

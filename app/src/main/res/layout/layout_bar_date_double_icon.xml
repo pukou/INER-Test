@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_layout_double_time"
+    style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+    <LinearLayout
+        android:id="@+id/slt_stime_ly"
+        style="@style/ClassicLinearV.AutoWrap">
+
+        <TextView
+            android:id="@+id/stime_title"
+            style="@style/ClassicTextTertiaryColored"
+            tools:text="@string/begin_date" />
+
+        <TextView
+            android:id="@+id/stime"
+            style="@style/ClassicTextTertiary"
+            tools:text="1992-03" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/slt_etime_ly"
+        style="@style/ClassicLinearV.AutoWrap">
+
+        <TextView
+            android:id="@+id/etime_title"
+            style="@style/ClassicTextTertiaryColored"
+            tools:text="@string/end_date" />
+
+        <TextView
+            android:id="@+id/etime"
+            style="@style/ClassicTextTertiary"
+            tools:text="1992-03" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/search"
+        style="@style/ClassicImage"
+        android:src="@drawable/selector_classic_icon_search" />
+</LinearLayout>

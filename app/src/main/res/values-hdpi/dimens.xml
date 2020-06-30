@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- atcion bar title max width -->
+    <dimen name="actionbar_title_max_width">120dp</dimen>
+    
+    <!-- ArcMenu -->
+    <dimen name="childSize">64px</dimen>
+    <dimen name="leftHolderWidth">60dp</dimen>
+
+</resources>

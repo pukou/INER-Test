@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearH.MatchWrap">
+    <!--可点击 必须可点击-->
+    <CheckBox
+        android:id="@+id/id_cb"
+        style="@style/ClassicCheck" />
+
+    <EditText
+        android:id="@+id/id_et"
+        style="@style/ClassicEdit.AutoWrap" />
+
+</LinearLayout>

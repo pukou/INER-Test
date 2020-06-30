@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <include layout="@layout/layout_bar_date_double_icon" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe">
+
+        <LinearLayout style="@style/ClassicLinearH">
+
+            <ListView
+                android:id="@+id/id_lv"
+
+                style="@style/ClassicListView.AutoMatch"
+                tools:listitem="@layout/item_list_text_two_vert_secondary_selected" />
+
+            <ListView
+                android:id="@+id/id_lv_2"
+                style="@style/ClassicListView.AutoMatch"
+                android:layout_weight="2"
+                tools:listitem="@layout/item_list_drugs_advice" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

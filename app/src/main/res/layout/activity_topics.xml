@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".components.mqtt.TopicsActivity"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <TextView
+        android:id="@+id/topics_txt"
+        style="@style/ClassicTextPrimary.MatchMatch"
+        android:text="@string/subscribe_topic" />
+
+</LinearLayout>

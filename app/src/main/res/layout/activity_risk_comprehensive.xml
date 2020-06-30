@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.user.RiskComprehensiveActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <android.support.v4.widget.NestedScrollView style="@style/ClassicScroll">
+
+        <LinearLayout
+            android:id="@+id/risk_comprehensive_root"
+            style="@style/ClassicLinearV" />
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

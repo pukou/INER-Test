@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <FrameLayout style="@style/ClassicFrame.MatchWrap">
+
+        <com.bsoft.mob.ienr.view.BsoftActionBar
+            android:id="@+id/actionbar"
+            style="@style/ClassicActionBar" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sickperson_list_grid_switch"
+            style="@style/ClassicSwitchCompat"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/classic_item_comm_margin_primary"
+            android:textColor="@color/selector_text_color_colored" />
+    </FrameLayout>
+
+    <include layout="@layout/layout_item_bar_text" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <com.bsoft.mob.ienr.view.expand.NoScrollViewPager
+            android:id="@+id/id_vp"
+            style="@style/ClassicViewPager"
+            android:background="@color/transparent"
+            />
+
+      <!--  <FrameLayout style="@style/ClassicFrame">
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView"
+                tools:listitem="@layout/sickperson_item" />
+
+            <GridView
+                android:id="@+id/pull_refresh_grid"
+                style="@style/ClassicGridView"
+                tools:listitem="@layout/sickperson_grid_item" />
+
+        </FrameLayout>-->
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

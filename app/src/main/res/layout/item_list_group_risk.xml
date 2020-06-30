@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary">
+
+    <LinearLayout style="@style/ClassicLinearV.AutoWrap">
+
+        <com.classichu.vectortextview.ClassicVectorTextView
+            android:id="@+id/risk_name"
+            style="@style/ClassicTextPrimary"
+            android:drawableLeft="@drawable/selector_classic_icon_up_down"
+            app:classic_tint="@color/colorAccent"
+            tools:text="dasdas" />
+
+
+        <LinearLayout
+            style="@style/ClassicLinearH.MatchWrap"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/risk_decrib"
+                style="@style/ClassicTextTertiaryColored"
+                tools:text="dasdas" />
+
+            <TextView
+                android:id="@+id/risk_star"
+                style="@style/ClassicTextTertiary"
+                android:text="★"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/risk_add"
+        style="@style/ClassicImage.Colored"
+        android:src="@drawable/ic_add_black_24dp" />
+
+</LinearLayout>

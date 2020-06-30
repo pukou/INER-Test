@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary">
+
+    <com.classichu.vectortextview.ClassicVectorTextView
+        android:id="@+id/id_tv"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:drawableLeft="@drawable/selector_classic_icon_up_down"
+        app:classic_tint="@color/colorAccent"
+        tools:text="dasdasd" />
+
+    <com.classichu.vectortextview.ClassicVectorTextView
+        android:id="@+id/id_tv_more"
+        style="@style/ClassicTextSecondaryColored"
+        android:drawableRight="@drawable/ic_add_black_24dp"
+        app:classic_tint="@color/colorAccent"
+        tools:text="文字可有可无" />
+</LinearLayout>

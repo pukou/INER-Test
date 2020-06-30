@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.BluetoothChooseActivity">
+    <!--！！！未改-->
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <TextView
+        style="@style/ClassicTextSecondary"
+        android:text="已配对:" />
+
+    <ListView
+        android:id="@+id/id_lv"
+        style="@style/ClassicListView"
+        tools:listitem="@layout/item_list_text_one_primary" />
+
+    <TextView
+        style="@style/ClassicTextSecondary"
+        android:text="未配对：" />
+
+    <ListView
+        android:id="@+id/id_lv_2"
+        style="@style/ClassicListView"
+        tools:listitem="@layout/item_list_text_one_primary" />
+
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        style="@style/MatchWrap.Vertical">
+
+        <LinearLayout
+            android:id="@+id/btadd"
+            style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                style="@style/ClassicTextTertiary"
+                android:text="绑定设备:" />
+
+            <TextView
+                android:id="@+id/txtbtaddress"
+                style="@style/ClassicTextTertiary"
+                android:text="无" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        style="@style/MatchWrap.Vertical">
+
+        <Button
+            android:id="@+id/btnScan"
+            style="@style/ClassicButtonRound"
+            android:text="扫描" />
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/ClassicButtonRound"
+            android:text="@string/project_operate_ok" />
+    </LinearLayout>
+
+</LinearLayout>

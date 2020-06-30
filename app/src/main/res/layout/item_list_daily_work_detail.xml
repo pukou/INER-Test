@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicListItemVertical">
+
+    <LinearLayout style="@style/ClassicLinearH.MatchAuto">
+
+
+
+        <TextView
+            android:id="@+id/work_brch"
+            style="@style/ClassicTextSecondary"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            tools:text="42342342" />
+
+        <TextView
+            android:id="@+id/work_brxm"
+            style="@style/ClassicTextSecondary"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            tools:text="42342342" />
+
+        <TextView
+            android:id="@+id/work_zyhm"
+            style="@style/ClassicTextSecondary"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            tools:text="42342342"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchAuto">
+
+        <TextView
+            android:id="@+id/work_bdmc"
+            style="@style/ClassicTextTertiary"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:visibility="gone"
+            tools:text="42342342"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/work_zkms"
+            style="@style/ClassicTextTertiary"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:visibility="gone"
+            tools:text="42342342"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+
+</LinearLayout>

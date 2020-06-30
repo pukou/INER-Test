@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="setting_ip_array">
+        <item>DHCP</item>
+        <item>静态</item>
+    </string-array>
+    <string-array name="setting_secret_type_array">
+        <item>WPA</item>
+        <item>WEP</item>
+        <item>无密码</item>
+    </string-array>
+    <string-array name="setting_main_menu_array">
+        <item>病人列表</item>
+        <item>今日工作</item>
+        <item>批量体征</item>
+        <item>标本采集</item>
+        <item>血糖监测</item>
+        <item>导管引流</item>
+        <item>护理交接</item>
+        <item>药品核对</item>
+        <!--<item>口服单</item>-->
+        <!--<item>输液单</item>-->
+        <item>日常巡视</item>
+        <item>血液签收</item>
+        <!-- 升级编号【56010038】============================================= start
+    外出管理PDA上只有登记功能，查询需要找到具体的人再查询，不太方便，最好能有一个查询整个病区外出病人的列表
+    ================= classichu 2018/3/7 19:49
+    -->
+        <item>外出管理</item>
+        <item>皮试管理</item>
+        <!-- =============================================================== end -->
+        <item>离线保存</item>
+        <item>消息列表</item>
+        <item>关于我们</item>
+    </string-array>
+
+    <!-- 主导航列表 -->
+    <!-- item的顺序要与 setting_main_menu_array 数组item一致 -->
+    <string-array name="main_menu_class_array">
+        <item>com.bsoft.mob.ienr.fragment.SickPersonListFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.DailyWorkFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.BatchLifeSymptomFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.BatchSpecimenFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.BatchBloodSugarFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.CatheterFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.BatchHandOverFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.AdviceCheckFragment</item>
+        <!--<item>com.bsoft.mob.ienr.fragment.OralActionFragment</item>-->
+        <!--<item>com.bsoft.mob.ienr.fragment.TransfuseActionFragment</item>-->
+        <item>com.bsoft.mob.ienr.fragment.DailyTourFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.BloodRecieveFragment</item>
+        <!-- 升级编号【56010038】============================================= start
+       外出管理PDA上只有登记功能，查询需要找到具体的人再查询，不太方便，最好能有一个查询整个病区外出病人的列表
+       ================= classichu 2018/3/7 19:49
+       -->
+        <item>com.bsoft.mob.ienr.fragment.AllOutControlFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.SkinTestFragment</item>
+        <!-- =============================================================== end -->
+        <item>com.bsoft.mob.ienr.fragment.OffLineFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.MessageFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.AboutFragment</item>
+    </string-array>
+    <!-- 不要随意更改名称 -->
+    <string-array name="setting_user_menu_array">
+        <item>病人信息</item>
+        <item>医嘱执行</item>
+        <item>输液巡视</item>
+        <item>生命体征</item>
+        <item>标本采集</item>
+        <item>护理记录</item>
+        <item>血糖监测</item>
+        <item>护理评估</item>
+        <item>风险评估</item>
+        <item>护理焦点</item>
+        <item>焦点关联</item>
+        <item>护理计划</item>
+        <item>健康教育</item>
+        <item>护理常规</item>
+        <item>外出管理</item>
+        <item>临床事件</item>
+        <item>费用查询</item>
+        <item>检验检查</item>
+        <item>护理评估新</item>
+        <item>输血医嘱</item>
+        <item>输血巡视</item>
+        <item>护理交接</item>
+        <item>血袋上交</item>
+        <item>中医护理</item>
+        <item>患者咨询</item>
+    </string-array>
+
+    <!-- 病人导航列表 -->
+    <!-- item的顺序要与 setting_user_menu_array 数组item一致 -->
+    <string-array name="user_menu_class_array">
+        <item>com.bsoft.mob.ienr.fragment.user.SickPersonInfoFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.DrugsAdviceFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.TransfusionTourFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.LifeSymptomFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.SpecimenFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.CareRecordTemplateFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.BloodSugarFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.NurseEvaluateTemplateFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.RiskEvaluationFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.NurseFocusFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.NurseFocusRelevanceFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.NursePlanFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.HealthGuidFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.DailyCareFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.OutControlFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.ClinicalEventFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.ExpenseFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.InspectionFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.NursingEvaluateTemplateFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.TransfusionBloodFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.TransfusionBloodTourFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.HandOverFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.BloodBagDeliveryFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.user.TraditionalNursingFragment</item>
+        <item>com.bsoft.mob.ienr.fragment.AdvisoryListFragment</item>
+    </string-array>
+
+    <!-- 宣教对象 -->
+    <string-array name="ann_objs_array">
+        <item>家属</item>
+        <item>病人</item>
+        <item>家属和病人</item>
+    </string-array>
+
+    <!-- 标本采集页  可以注销某个项目，单不可改变项目内容 -->
+    <string-array name="speciment_actions_array">
+        <item>待发放项目</item>
+        <item>待采集项目</item>
+        <item>已采集项目</item>
+    </string-array>
+
+    <string-array name="speciment_types_array">
+        <item>全部</item>
+        <item>血液</item>
+        <item>24小时尿液</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 外出管理页 -->
+    <string-array name="out_with_array">
+        <item>有陪同人员</item>
+        <item>无陪同人员</item>
+    </string-array>
+
+    <!-- 药品医嘱页 -->
+    <string-array name="advice_drug_menu_array">
+        <item>查看医嘱 </item>
+        <item>查看输液单</item>
+    </string-array>
+
+    <!-- 输血医嘱页 -->
+    <string-array name="advice_blood_menu_array">
+        <item>查看医嘱 </item>
+    </string-array>
+
+    <!-- 护理记录引用页 -->
+    <string-array name="care_record_refer_array">
+        <item>引用医嘱</item>
+        <!--<item>引用过敏药物 </item>-->
+        <item>引用手术记录</item>
+        <item>引用体征记录</item>
+    </string-array>
+
+    <!-- 输液巡视页 -->
+    <string-array name="tr_tour_array">
+        <item>输液巡视 </item>
+        <item>输血巡视</item>
+        <item>治疗巡视</item>
+    </string-array>
+
+    <!-- 计划/焦点措施类型 -->
+    <string-array name="plan_measure">
+        <item>措施</item>
+        <item>宣教</item>
+    </string-array>
+
+</resources>

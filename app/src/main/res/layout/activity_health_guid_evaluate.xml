@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.user.HealthGuidEvaluateActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <!-- 宣教操作控件 -->
+    <include layout="@layout/layout_item_bar_text" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <FrameLayout style="@style/ClassicFrame">
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView"
+                tools:listitem="@layout/item_list_health_guid_oper" />
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <!-- 滑动页，显示宣教分类及宣教项目 -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_vp"
+        style="@style/ClassicViewPager.MatchAuto" />
+
+
+    <include layout="@layout/layout_button_line" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/classic_space_height_primary" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearH.MatchWrap"
+    android:gravity="center_vertical">
+    <!--可点击 必须可点击-->
+    <CheckBox
+        android:id="@+id/id_cb"
+        style="@style/ClassicCheck" />
+
+    <EditText
+        android:id="@+id/id_et_4_id_cb"
+        style="@style/ClassicEdit.AutoWrap" />
+
+    <ImageView
+        android:id="@+id/id_iv"
+        style="@style/ClassicImage.Colored"
+        android:src="@drawable/ic_info_outline_black_24dp"
+        tools:text="备注" />
+
+</LinearLayout>

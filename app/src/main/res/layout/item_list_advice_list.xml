@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap">
+
+    <LinearLayout
+        android:id="@+id/view"
+        style="@style/ClassicListItem"
+        android:padding="@dimen/classic_item_comm_padding_primary"
+        >
+
+        <TextView
+            android:id="@+id/YZMC"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="dasdas" />
+
+        <ImageView
+            android:id="@+id/advice_arrow_img"
+            style="@style/ClassicImage.Colored"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boxView"
+        style="@style/ClassicLinearV.MatchWrap">
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                android:id="@+id/SYPCMC"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="SYPCMC" />
+
+            <TextView
+                android:id="@+id/YPYFMC"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="SYPCMC" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                android:id="@+id/YCJLMS"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="SYPCMC" />
+
+            <TextView
+                android:id="@+id/YCSLMS"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="SYPCMC" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/KSSJ"
+            style="@style/ClassicTextSecondary.MatchWrap"
+            tools:text="SYPCMC" />
+
+        <TextView
+            android:id="@+id/TZSJ"
+            style="@style/ClassicTextSecondary.MatchWrap"
+            tools:text="SYPCMC" />
+
+        <TextView
+            android:id="@+id/BZXX"
+            style="@style/ClassicTextSecondary.MatchWrap"
+            tools:text="SYPCMC" />
+
+        <ImageView
+            android:id="@+id/advice_detail_btn"
+            style="@style/ClassicImage"
+            android:layout_gravity="right"
+            android:src="@drawable/selector_classic_icon_search" />
+    </LinearLayout>
+
+</LinearLayout>

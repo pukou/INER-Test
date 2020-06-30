@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/classic_item_comm_margin_tertiary"
+    style="@style/ClassicLinearV">
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/record_name"
+            style="@style/ClassicTextSecondaryColored"
+            android:text="尿导管" />
+
+        <EditText
+            android:id="@+id/record_text"
+            android:inputType="number"
+            style="@style/ClassicEdit.AutoWrap" />
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="ml" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="关联体征项目:" />
+
+
+        <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+            android:id="@+id/id_spinner_layout"
+            style="@style/ClassicSpinner" />
+    </LinearLayout>
+
+
+</LinearLayout>

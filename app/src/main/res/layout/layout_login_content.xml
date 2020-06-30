@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap"
+    android:background="@drawable/inset_dialog_bg">
+
+    <LinearLayout
+        style="@style/ClassicLinearH.MatchWrap"
+        android:layout_margin="@dimen/classic_item_comm_margin_tertiary"
+        android:background="@drawable/selector_classic_bg_edit"
+        >
+
+        <ImageView
+            style="@style/ClassicImage.Colored"
+            android:src="@drawable/ic_person_outline_black_24dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/tvUname"
+            style="@style/ClassicEdit.AutoWrap"
+            android:background="@null"
+            android:hint="@string/login_usrname_hint"
+            android:text="@string/login_usrname_default"
+            android:textAppearance="@style/ClassicTextAppearancePrimary" />
+
+        <ImageView
+            android:id="@+id/login_clear_usr_img"
+            style="@style/ClassicImage.Colored"
+            android:src="@drawable/ic_cancel_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ClassicLinearH.MatchWrap"
+        android:layout_margin="@dimen/classic_item_comm_margin_tertiary"
+        android:background="@drawable/selector_classic_bg_edit"
+        >
+
+        <ImageView
+            style="@style/ClassicImage.Colored"
+            android:src="@drawable/ic_lock_outline_black_24dp" />
+
+        <EditText
+            android:id="@+id/etPwd"
+            style="@style/ClassicEdit.AutoWrap"
+            android:background="@null"
+            android:hint="@string/login_pwd_hint"
+            android:inputType="textPassword"
+            android:textAppearance="@style/ClassicTextAppearancePrimary" />
+
+        <ImageView
+            android:id="@+id/login_clear_pwd_img"
+            style="@style/ClassicImage.Colored"
+            android:src="@drawable/ic_cancel_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_second_ll"
+        style="@style/MatchWrap.Vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/classic_space_height_primary" />
+
+        <LinearLayout
+            style="@style/ClassicLinearH.MatchWrap"
+            android:layout_margin="@dimen/classic_item_comm_margin_tertiary"
+            android:background="@drawable/selector_classic_bg_edit"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                style="@style/ClassicImage.Colored"
+                android:src="@drawable/ic_person_outline_black_24dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/tvUname2"
+                style="@style/ClassicEdit.AutoWrap"
+                android:background="@null"
+                android:hint="@string/login_usrname_hint"
+                android:text="@string/login_usrname_default"
+                android:textAppearance="@style/ClassicTextAppearancePrimary" />
+
+            <ImageView
+                android:id="@+id/login_clear_usr_img2"
+                style="@style/ClassicImage.Colored"
+                android:src="@drawable/ic_cancel_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ClassicLinearH.MatchWrap"
+            android:layout_margin="@dimen/classic_item_comm_margin_tertiary"
+            android:background="@drawable/selector_classic_bg_edit"
+            >
+
+            <ImageView
+                style="@style/ClassicImage.Colored"
+                android:src="@drawable/ic_lock_outline_black_24dp" />
+
+            <EditText
+                android:id="@+id/etPwd2"
+                style="@style/ClassicEdit.AutoWrap"
+                android:background="@null"
+                android:hint="@string/login_pwd_hint"
+                android:inputType="textPassword"
+                android:textAppearance="@style/ClassicTextAppearancePrimary" />
+
+            <ImageView
+                android:id="@+id/login_clear_pwd_img2"
+                style="@style/ClassicImage.Colored"
+                android:src="@drawable/ic_cancel_black_24dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/classic_space_height_primary" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/ClassicButtonRound"
+        android:layout_margin="@dimen/classic_item_comm_margin_tertiary"
+        android:text="@string/login_login"
+        android:textAppearance="@style/ClassicTextAppearancePrimaryWhite" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearV">
+    <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+        android:id="@+id/id_spinner_layout"
+        style="@style/ClassicSpinner" />
+
+    <ListView
+        android:id="@+id/id_lv"
+        style="@style/ClassicListView.MatchAuto" />
+</LinearLayout>
+
+

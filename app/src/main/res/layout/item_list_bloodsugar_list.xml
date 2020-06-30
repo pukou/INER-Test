@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearH.MatchWrap">
+
+    <TextView
+        android:id="@+id/id_tv_sd"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        android:text="id_tv_sd" />
+
+
+    <TextView
+        android:id="@+id/id_tv_value"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        android:text="id_tv_value" />
+
+
+    <TextView
+        android:id="@+id/id_tv_clr"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        android:text="id_tv_clr" />
+
+
+    <TextView
+        android:id="@+id/id_tv_sj"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        android:text="id_tv_sj" />
+
+    <ImageView
+        android:id="@+id/id_iv_delete"
+        style="@style/ClassicImage.Colored"
+        android:src="@drawable/ic_delete_forever_black_24dp" />
+
+</LinearLayout>

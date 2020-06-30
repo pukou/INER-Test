@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe">
+
+        <LinearLayout style="@style/ClassicLinearV.MatchAuto">
+
+            <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/classic_item_comm_margin_10"
+                    android:src="@drawable/img_money" />
+
+                <LinearLayout style="@style/ClassicLinearV.MatchWrap">
+
+                    <TextView
+                        android:id="@+id/ZJJE"
+                        style="@style/ClassicTextSecondary"
+                        android:padding="@dimen/classic_item_comm_padding_quaternary" />
+
+                    <TextView
+                        android:id="@+id/ZFJE"
+                        style="@style/ClassicTextSecondary"
+                        android:padding="@dimen/classic_item_comm_padding_quaternary" />
+
+                    <TextView
+                        android:id="@+id/JKJE"
+                        style="@style/ClassicTextSecondary"
+
+                        android:padding="@dimen/classic_item_comm_padding_quaternary" />
+
+                    <TextView
+                        android:id="@+id/FYYE"
+                        style="@style/ClassicTextSecondary"
+
+                        android:padding="@dimen/classic_item_comm_padding_quaternary" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/layout_checkable_text" />
+
+            <include
+                layout="@layout/layout_bar_date_double_icon"
+                android:visibility="gone" />
+
+            <com.bsoft.mob.ienr.view.expand.NoScrollViewPager
+                android:id="@+id/id_vp"
+                style="@style/ClassicViewPager.MatchAuto" />
+            <!--   <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ListView
+                       android:id="@+id/id_lv"
+                       style="@style/ClassicListView"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+
+                   <ListView
+                       android:id="@+id/id_lv_2"
+                       style="@style/ClassicListView"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+
+               </RelativeLayout>-->
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

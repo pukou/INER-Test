@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.user.AdviceListActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout
+        android:id="@+id/id_ll_controller"
+        style="@style/ClassicLinearV.MatchWrap"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <include layout="@layout/layout_bar_date_double_icon" />
+
+        <include layout="@layout/layout_checkable_check" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <FrameLayout style="@style/ClassicFrame">
+
+            <ListView
+                android:id="@+id/id_lv"
+                tools:listitem="@layout/item_list_advice_list"
+                style="@style/ClassicListView" />
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

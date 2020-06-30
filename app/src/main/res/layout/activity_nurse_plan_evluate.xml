@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.user.NursePlanEvaluateActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <include layout="@layout/layout_item_bar_image" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <FrameLayout style="@style/ClassicFrame">
+
+            <LinearLayout style="@style/ClassicLinearV">
+
+                <ListView
+                    android:id="@+id/id_lv_2"
+                    style="@style/ClassicListView.MatchAuto"
+                    tools:listitem="@layout/item_list_bar_check_edit_lines" />
+
+                <ListView
+                    android:id="@+id/id_lv"
+                    style="@style/ClassicListView.MatchAuto"
+                    tools:listitem="@layout/item_list_text_two_vert_primary_icon" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize" >
+
+        <!--
+             <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/menu_title" />
+        -->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            tools:text="fragment_user_model_menu_list.xml"
+            style="@style/ClassicTextPrimaryWhite" />
+    </RelativeLayout>
+
+    <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_divider" /> -->
+    <View style="@style/ClassicDividerViewMatchExactly" />
+
+
+    <!-- 升级编号【56010055】============================================= start
+右侧菜单切换跳到底部问题处理
+    ================= Classichu 2017/11/20 15:04
+    -->
+    <!--
+        android:stackFromBottom="false"
+        android:transcriptMode="alwaysScroll"
+        -->
+
+    <ListView
+        android:id="@+id/id_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#000000"
+        android:divider="@color/classicDivider"
+        android:dividerHeight="0.6dp"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/menu_item_bg"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        tools:listitem="@layout/item_list_bar_image_text_white"
+      />
+    
+    <!-- =============================================================== end -->
+
+</LinearLayout>

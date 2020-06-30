@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 分类page -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearV">
+
+
+    <TextView
+        style="@style/ClassicTextPrimary.MatchWrap"
+        android:text="宣教类别>>" />
+
+    <ListView
+        android:id="@+id/id_lv"
+        style="@style/ClassicListView.MatchAuto" />
+
+</LinearLayout>

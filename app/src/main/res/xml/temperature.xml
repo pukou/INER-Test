@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0px"
+    android:keyHeight="@dimen/keyboard_height"
+    android:keyWidth="20%p"
+    android:verticalGap="0px" >
+
+    <Row>
+
+        <Key
+            android:codes="3600"
+            android:keyLabel="36." />
+
+        <Key
+            android:codes="55"
+            android:keyLabel="7" />
+
+        <Key
+            android:codes="56"
+            android:keyLabel="8" />
+
+        <Key
+            android:codes="57"
+            android:keyLabel="9" />
+
+        <Key
+            android:codes="47"
+            android:keyEdgeFlags="right"
+            android:keyLabel="/" />
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="3700"
+            android:keyLabel="37." />
+
+        <Key
+            android:codes="52"
+            android:keyLabel="4" />
+
+        <Key
+            android:codes="53"
+            android:keyLabel="5" />
+
+        <Key
+            android:codes="54"
+            android:keyLabel="6" />
+
+        <Key
+            android:codes="3701"
+            android:keyEdgeFlags="right"
+            android:keyLabel="☆" />
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="3800"
+            android:keyLabel="38." />
+
+        <Key
+            android:codes="49"
+            android:keyLabel="1" />
+
+        <Key
+            android:codes="50"
+            android:keyLabel="2" />
+
+        <Key
+            android:codes="51"
+            android:keyLabel="3" />
+
+        <Key
+            android:codes="3801"
+            android:keyEdgeFlags="right"
+            android:keyLabel="※ " />
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="3900"
+            android:keyLabel="39." />
+
+        <Key
+            android:codes="48"
+            android:keyLabel="0" />
+
+        <Key
+            android:codes="46"
+            android:keyLabel="." />
+
+        <Key
+            android:codes="45"
+            android:keyLabel="-" />
+
+        <!-- 升级编号【56010029】============================================= start
+        体温项目调用体温键盘，体温键盘‘DEL’改为‘删除’、体温支持小键盘输入
+         public static final int KEYCODE_SHIFT = -1;
+   public static final int KEYCODE_MODE_CHANGE = -2;
+   public static final int KEYCODE_CANCEL = -3;
+   public static final int KEYCODE_DONE = -4;
+   public static final int KEYCODE_DELETE = -5;
+   public static final int KEYCODE_ALT = -6;
+
+        ================= Classichu 2017/11/20 16:50
+        -->
+        <Key
+            android:codes="-5"
+            android:keyEdgeFlags="right"
+            android:keyLabel="删除" />
+        <!-- =============================================================== end -->
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="69"
+            android:keyLabel="E"
+            android:keyWidth="30%p"  />
+
+        <Key
+            android:codes="94"
+            android:keyLabel="^" />
+
+        <Key
+            android:codes="43"
+            android:keyLabel="+" />
+<!--
+        <Key
+            android:codes="-3"
+            android:keyEdgeFlags="right"
+            android:keyLabel="完成"
+            android:keyWidth="30%p" />-->
+        <Key
+            android:codes="-3"
+            android:keyLabel="完成"
+            android:keyWidth="20%p" />
+        <Key
+            android:codes="-4"
+            android:keyEdgeFlags="right"
+            android:keyLabel="回车"
+            android:keyWidth="20%p" />
+    </Row>
+
+</Keyboard>

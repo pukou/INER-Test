@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/classic_item_comm_margin_10"
+    style="@style/ClassicLinearH.MatchWrap">
+
+    <Button
+        android:id="@+id/id_btn_date_ok"
+        style="@style/ClassicButtonSmall.AutoWrap"
+        android:text="@string/project_operate_ok" />
+
+    <Button
+        android:id="@+id/id_btn_date_cancel"
+        style="@style/ClassicButtonSmall.AutoWrap"
+        android:text="@string/project_operate_cancel" />
+</LinearLayout>
+

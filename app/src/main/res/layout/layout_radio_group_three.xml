@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_rg"
+    style="@style/ClassicRadio.Horizontal">
+
+    <RadioButton
+        android:id="@+id/id_rb"
+        style="@style/ClassicCheckableTertiary.RightBottom"
+        android:checked="true"
+        tools:text="@string/transfusion_blood_state_all" />
+
+    <RadioButton
+        android:id="@+id/id_rb_2"
+        style="@style/ClassicCheckableTertiary.RightBottom"
+        tools:text="@string/transfusion_blood_state_did" />
+
+    <RadioButton
+        android:id="@+id/id_rb_3"
+        style="@style/ClassicCheckableTertiary.Bottom"
+        tools:text="@string/transfusion_blood_state_todo" />
+</RadioGroup>
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap"
+    android:background="@android:color/white">
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/list_item_card_text"
+            style="@style/ClassicTextPrimary.AutoWrap"
+            android:gravity="center"
+            android:padding="@dimen/classic_item_comm_padding_primary"
+            android:textSize="@dimen/classic_text_size_primary"
+            tools:text="dasdasda" />
+
+        <com.bsoft.mob.ienr.view.waterdropcard.WaterDrop
+            android:id="@+id/drop"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <Button
+            android:id="@+id/list_item_card_button_1"
+            style="@style/ClassicButtonRoundWhite.AutoWrap"
+            android:layout_marginLeft="@dimen/classic_item_comm_margin_big"
+            android:layout_marginRight="@dimen/classic_item_comm_margin_big"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/list_item_left_button" />
+
+        <Button
+            android:id="@+id/list_item_card_button_2"
+            style="@style/ClassicButtonRoundWhite.AutoWrap"
+            android:layout_marginLeft="@dimen/classic_item_comm_margin_big"
+            android:layout_marginRight="@dimen/classic_item_comm_margin_big"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/list_item_right_button" />
+    </LinearLayout>
+
+</LinearLayout>

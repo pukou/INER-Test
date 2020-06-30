@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text1"
+    style="@style/ClassicTextSecondary"
+    android:layout_width="match_parent"
+    android:background="@drawable/selector_classic_bg_click_tertiary"
+    android:ellipsize="marquee"
+    android:padding="@dimen/classic_item_comm_padding_primary"
+    tools:text="下拉Item" />

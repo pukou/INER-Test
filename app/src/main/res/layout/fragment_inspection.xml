@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <!--
+     升级编号【56010025】============================================= start
+     检验检查：检验List项目数据趋势图，项目分类查看
+     ================= Classichu 2017/10/18 9:34
+    -->
+
+    <include layout="@layout/layout_checkable_text" />
+
+    <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+        android:id="@+id/id_spinner_layout"
+        style="@style/ClassicSpinner" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <com.bsoft.mob.ienr.view.expand.NoScrollViewPager
+            android:id="@+id/id_vp"
+            style="@style/ClassicViewPager" />
+
+        <!--<LinearLayout style="@style/ClassicLinearV.MatchAuto">
+
+                <ListView
+                    android:id="@+id/id_lv"
+                    style="@style/ClassicListView" />
+
+                <ListView
+                    android:id="@+id/id_lv_2"
+                    style="@style/ClassicListView" />
+            </LinearLayout>-->
+        <!-- ========================end =============================== -->
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

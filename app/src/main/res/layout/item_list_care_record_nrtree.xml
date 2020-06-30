@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary">
+
+    <TextView
+        android:id="@+id/care_record_nrtree_time_txt"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        tools:text="dasdasdasda" />
+
+
+    <ImageView
+        android:id="@+id/care_record_nrtree_dlt_ibtn"
+        style="@style/ClassicImage.Colored"
+        android:src="@drawable/ic_delete_forever_black_24dp" />
+
+    <com.classichu.vectortextview.ClassicVectorTextView
+        android:id="@+id/care_record_nrtree_sign_ibtn"
+        style="@style/ClassicTextSecondaryColored"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginRight="@dimen/classic_item_comm_margin_primary"
+        android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+        android:drawablePadding="@dimen/classic_drawable_padding_primary"
+        android:text="@string/sign"
+        app:classic_tint="@color/colorAccent" />
+
+
+</LinearLayout>

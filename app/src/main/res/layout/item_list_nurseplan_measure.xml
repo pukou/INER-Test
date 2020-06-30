@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap">
+
+    <LinearLayout
+        style="@style/ClassicLinearH.MatchWrap"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/nurseplan_item_name"
+            style="@style/ClassicEdit.AutoWrap"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="3"
+            android:singleLine="false"
+            tools:text="dasdSADASDASDASDASDASDAdasdSADASDASDASDASDASDASDASDASDAasSDASDASDAas" />
+
+        <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+            android:id="@+id/id_spinner_layout"
+            style="@style/ClassicSpinner.AutoWrap"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <!-- 业务需求  此处 可点击 ，注意 list 推荐用itemclick 操作check 状态 -->
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@style/ClassicCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_ll_more"
+        style="@style/ClassicLinearV.MatchWrap">
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                android:id="@+id/nurseplan_item_starttime"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="dasdas" />
+
+            <TextView
+                android:id="@+id/nurseplan_item_startperson"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="dasdas" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                android:id="@+id/nurseplan_item_endtime"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="dasdas" />
+
+            <TextView
+                android:id="@+id/nurseplan_item_endjperson"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="dasdas" />
+
+            <ImageView
+                android:id="@+id/nurseplan_item_edit"
+                style="@style/ClassicImage.Colored"
+                android:contentDescription="编辑"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:visibility="gone"
+                tools:text="dasdas"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

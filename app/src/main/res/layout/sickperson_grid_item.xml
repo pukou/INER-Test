@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicGridItem">
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/patient_list_ch"
+            style="@style/ClassicTextPrimary.AutoWrap"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="12121床" />
+
+        <TextView
+            android:id="@+id/patient_list_brxm"
+            style="@style/ClassicTextPrimary"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="的撒打" />
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/id_tv_bah"
+            style="@style/ClassicTextPrimary.AutoWrap"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="病案号:13213123" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/patient_list_brxb"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="男" />
+
+        <TextView
+            android:id="@+id/patient_list_nl"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="34岁" />
+
+        <TextView
+            android:id="@+id/id_tv_xx"
+            style="@style/ClassicTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_classic_bg_view_1_red"
+            android:gravity="center"
+            android:paddingBottom="@dimen/classic_item_comm_padding_quaternary"
+            android:paddingLeft="@dimen/classic_item_comm_padding_primary"
+            android:paddingRight="@dimen/classic_item_comm_padding_primary"
+            android:paddingTop="@dimen/classic_item_comm_padding_quaternary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/classic_text_size_secondary"
+            tools:text="血型" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/id_tv_day_in"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="12-09" />
+
+
+        <TextView
+            android:id="@+id/id_tv_lclj"
+            style="@style/ClassicTextSecondary"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            android:textColor="@color/red"
+            tools:text="★" />
+
+
+        <!--<ImageView
+            android:id="@+id/patient_list_hljb"
+            style="@style/ClassicImage"
+            android:contentDescription="护理级别"
+            android:src="@drawable/img_level_3" />-->
+        <TextView
+            android:id="@+id/patient_list_hljb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_classic_bg_view_3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/classic_item_comm_padding_quaternary"
+            android:paddingLeft="@dimen/classic_item_comm_padding_primary"
+            android:paddingRight="@dimen/classic_item_comm_padding_primary"
+            android:paddingTop="@dimen/classic_item_comm_padding_quaternary"
+            android:text="Ⅲ级"
+            android:textSize="@dimen/classic_text_size_secondary"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/id_tv_zd"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:lines="2"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="诊断" />
+
+        <TextView
+            android:id="@+id/id_tv_ys"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="医生" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+
+        <LinearLayout style="@style/ClassicLinearV.AutoWrap">
+
+            <TextView
+                android:id="@+id/id_tv_zt_ya"
+                style="@style/ClassicTextSecondary"
+                android:includeFontPadding="false"
+                android:minWidth="55dp"
+                android:padding="@dimen/classic_item_comm_padding_tertiary"
+                tools:text="压疮:" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearV.AutoWrap">
+
+            <TextView
+                android:id="@+id/id_tv_zt_zhui"
+                style="@style/ClassicTextSecondary"
+                android:includeFontPadding="false"
+                android:minWidth="55dp"
+                android:padding="@dimen/classic_item_comm_padding_tertiary"
+                tools:text="坠床:" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ClassicLinearH.MatchWrap"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+
+        <LinearLayout style="@style/ClassicLinearV.AutoWrap">
+
+            <TextView
+                android:id="@+id/id_tv_zt_bi"
+                style="@style/ClassicTextSecondary"
+                android:includeFontPadding="false"
+                android:minWidth="55dp"
+                android:padding="@dimen/classic_item_comm_padding_tertiary"
+                tools:text="BI:" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearV.AutoWrap">
+
+            <TextView
+                android:id="@+id/id_tv_zt_vte"
+                style="@style/ClassicTextSecondary"
+                android:includeFontPadding="false"
+                android:minWidth="55dp"
+                android:padding="@dimen/classic_item_comm_padding_tertiary"
+                tools:text="VTE:" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 升级编号【56010014】============================================= start
+今日出院的病人，系统会提早出院，但是该病人当天的药品需要执行完，目前PDA无法处理该类病人的医嘱执行。（需要将当日出院的病人也显示在病人类别中，并标识）
+      ================= Classichu 2017/10/11 16:30
+      5.
+      -->
+
+    <!-- =============================================================== end -->
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/id_tv_today_out"
+            style="@style/ClassicTextSecondary"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            android:textColor="@color/red"
+            tools:text="id_tv_today_out" />
+
+        <!-- HorizontalListView wrap_content应该未实现 -->
+        <com.bsoft.mob.ienr.view.horizontallistview.HorizontalListView
+            android:id="@+id/statelist"
+            style="@style/ClassicHorizontalScroll.AutoWrap"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

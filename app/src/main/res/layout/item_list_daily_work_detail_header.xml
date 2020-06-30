@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicListItemVertical">
+
+    <LinearLayout style="@style/MatchAuto.Horizontal">
+
+
+        <TextView
+            android:id="@+id/work_brch"
+            style="@style/ClassicTextPrimary"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            tools:text="42342342" />
+
+        <TextView
+            android:id="@+id/work_brxm"
+            style="@style/ClassicTextPrimary"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            tools:text="42342342" />
+
+
+        <TextView
+            android:id="@+id/work_zyhm"
+            style="@style/ClassicTextPrimary"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            tools:text="42342342"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

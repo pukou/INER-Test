@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout
+        android:id="@+id/id_ll_container"
+        style="@style/ClassicLinearV">
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <TextView
+                style="@style/ClassicTextPrimary.AutoWrap"
+                android:text="历史体温" />
+
+            <TextView
+                style="@style/ClassicTextPrimary.AutoWrap"
+                android:text="降温措施" />
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView.AutoMatch" />
+
+            <ListView
+                android:id="@+id/id_lv_2"
+                style="@style/ClassicListView.AutoMatch" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

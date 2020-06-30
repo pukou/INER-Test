@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <TextView
+        android:id="@+id/SFMC"
+        style="@style/ClassicTextSecondary"
+        tools:text="FYMC" />
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/ZJJE"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="ZJJE" />
+
+        <TextView
+            android:id="@+id/ZFJE"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="ZFJE" />
+    </LinearLayout>
+
+</LinearLayout>

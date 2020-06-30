@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_shortAnimTime"
+    android:exitFadeDuration="@android:integer/config_shortAnimTime"
+    >
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/classic_divider_height_secondary"
+                android:color="@color/classicEditItemBorderColor" />
+            <corners android:radius="@dimen/classic_divider_radius_primary" />
+            <solid android:color="@color/classicGrayLight" />
+        </shape>
+    </item>
+</selector>

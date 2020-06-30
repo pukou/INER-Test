@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.LoginActivity"
+    style="@style/ClassicLinearV">
+
+    <FrameLayout style="@style/ClassicFrame.MatchWrap">
+
+        <com.bsoft.mob.ienr.view.BsoftActionBar
+            android:id="@+id/actionbar"
+            style="@style/ClassicActionBar" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/login_switch"
+            style="@style/ClassicSwitchCompat"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/classic_item_comm_margin_primary"
+            android:textOff="用户"
+            android:textOn="管理"
+            />
+    </FrameLayout>
+
+    <include
+        layout="@layout/layout_login_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/classic_item_comm_margin_primary"
+        android:padding="@dimen/classic_item_comm_padding_primary" />
+
+
+    <ImageView
+        android:id="@+id/ivSign"
+        style="@style/WrapWrap"
+        android:layout_margin="@dimen/classic_item_comm_margin_big"
+        android:background="#cccccc"
+        android:minHeight="100dp"
+        android:minWidth="100dp" />
+
+    <ImageView
+        android:id="@+id/ivSign2"
+        style="@style/WrapWrap"
+        android:layout_margin="@dimen/classic_item_comm_margin_big"
+        android:background="#cccccc"
+        android:minHeight="100dp"
+        android:minWidth="100dp" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_bsoft"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        style="@style/ClassicTextSecondary"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/classic_item_comm_margin_primary"
+        android:text="@string/login_copyright_zh" />
+
+    <TextView
+        android:id="@+id/copyright"
+        style="@style/ClassicTextSecondary"
+        android:layout_gravity="center"
+        android:text="@string/login_copyright_en" />
+
+
+</LinearLayout>
+

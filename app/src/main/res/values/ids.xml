@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="main_right_ll" type="id"/>
+    <item name="main_left_ll" type="id"/>
+    
+    <item name="selected_view" type="id"/>
+
+    <!-- 二维码扫描 -->
+    <item type="id" name="auto_focus"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="decode_succeeded"/>
+    <item type="id" name="decode_failed"/>
+    <item type="id" name="return_scan_result"/>
+    <item type="id" name="launch_product_query"/>
+    <item type="id" name="decode"/>
+     <item type="id" name="quit"/>
+     <item type="id" name="id_hold_view_pos"/>
+     <item type="id" name="id_hold_time_format"/>
+     <item type="id" name="id_hold_view_dzbdjl"/>
+
+
+
+    <item name="id_holder_base" type="id" />
+    <item name="id_holder_view_state" type="id" />
+    <item name="id_holder_view_organizeLayout" type="id" />
+    <item name="id_holder_view_classicLayout_expandView" type="id" />
+    <item name="id_holder_view_radioButton_key" type="id" />
+    <item name="id_holder_view_childLayout" type="id" />
+    <item name="id_holder_view_checkBox_key" type="id" />
+    <item name="id_holder_view_tv_title_num" type="id" />
+    <item name="id_holder_view_data_nei" type="id" />
+    <item name="id_holder_view_data_nei_child" type="id" />
+    <item name="id_holder_view_data_nei_parent" type="id" />
+    <item name="id_holder_view_visibility" type="id" />
+
+    <item name="id_holder_view_xmkz_pair" type="id" />
+    <item name="id_holder_view_layout_table_4_deleteClick" type="id" />
+    <item name="id_holder_view_table_child" type="id" />
+    <item name="id_holder_is_downselect" type="id" />
+    <item name="id_menu_item_plus_1" type="id" />
+    <item name="id_menu_item_plus_2" type="id" />
+
+    <item name="tag_KJ" type="id" />
+
+</resources>

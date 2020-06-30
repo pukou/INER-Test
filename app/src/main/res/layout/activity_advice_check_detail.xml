@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.AdviceCheckDetailActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <LinearLayout style="@style/ClassicLinearV.MatchAuto">
+
+            <RelativeLayout
+                android:id="@+id/form_head"
+                style="@style/ClassicLinearControlBarPrimary">
+
+                <TextView
+                    android:id="@+id/form_brch"
+                    style="@style/ClassicTextPrimary"
+                    android:text="1003床"
+                    android:textSize="@dimen/classic_text_size_primary" />
+
+                <TextView
+                    android:id="@+id/form_brxm"
+                    style="@style/ClassicTextPrimary"
+                    android:layout_below="@+id/form_brch"
+                    android:text="王一一"
+                    android:textSize="@dimen/classic_text_size_primary" />
+
+                <TextView
+                    android:id="@+id/form_brxb"
+                    style="@style/ClassicTextPrimary"
+                    android:layout_alignBaseline="@+id/form_brxm"
+                    android:layout_toRightOf="@+id/form_brxm"
+                    android:text="女"
+                    android:textSize="@dimen/classic_text_size_primary" />
+
+                <TextView
+                    android:id="@+id/form_brnl"
+                    style="@style/ClassicTextPrimary"
+                    android:layout_alignBaseline="@+id/form_brxm"
+                    android:layout_toRightOf="@+id/form_brxb"
+                    android:text="19岁"
+                    android:textSize="@dimen/classic_text_size_primary" />
+
+                <TextView
+                    android:id="@+id/form_ypyf"
+                    style="@style/ClassicTextPrimary"
+                    android:layout_alignParentRight="true"
+                    android:text="雾化吸入"
+                    android:textSize="@dimen/classic_text_size_primary" />
+
+                <TextView
+                    android:id="@+id/form_sypc"
+                    style="@style/ClassicTextPrimary"
+                    android:layout_alignBaseline="@+id/form_brxm"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/form_ypyf"
+                    android:text="TID"
+                    android:textSize="@dimen/classic_text_size_primary" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/form_head_img"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/classicDivider"
+                android:contentDescription="@string/advice_split_img" />
+
+            <LinearLayout
+                android:id="@+id/form_head_title"
+                style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+                <TextView
+                    style="@style/ClassicTextPrimary.AutoWrap"
+                    android:text="药品名称" />
+
+
+                <TextView
+                    android:id="@+id/detail_num"
+                    style="@style/ClassicTextPrimary"
+                    android:text="剂量" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView.MatchAuto"
+                tools:listitem="@layout/item_list_text_two_secondary" />
+
+            <LinearLayout
+                android:id="@+id/form_tail"
+                style="@style/ClassicLinearControlBarPrimary">
+
+                <TextView
+                    android:id="@+id/form_jhrq"
+                    style="@style/ClassicTextPrimary.AutoWrap"
+                    android:text="dasdas" />
+
+
+                <TextView
+                    android:id="@+id/form_byhd"
+                    style="@style/ClassicTextPrimary.AutoWrap"
+                    android:text="摆药:" />
+
+
+                <TextView
+                    android:id="@+id/form_jyhd"
+                    style="@style/ClassicTextPrimary.AutoWrap"
+                    android:text="加药:" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

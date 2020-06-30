@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+
+    <LinearLayout
+        android:id="@+id/slt_date_ly"
+        style="@style/WrapWrap.Vertical">
+
+        <TextView
+            style="@style/ClassicTextTertiaryColored"
+            android:text="@string/spa_slt_date" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/ClassicTextTertiary"
+            tools:text="1992-03" />
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/trans_mode"
+        style="@style/AutoWrap.Horizontal"
+        android:layout_margin="@dimen/classic_item_comm_margin_primary"
+        android:background="@drawable/shape_classic_bg_view_bar">
+
+        <RadioButton
+            android:id="@+id/single_radio"
+            style="@style/ClassicCheckableTertiary"
+            android:checked="true"
+            android:text="接瓶" />
+
+        <RadioButton
+            android:id="@+id/multi_radio"
+            style="@style/ClassicCheckableTertiary"
+            android:text="@string/advice_muliti_tag" />
+    </RadioGroup>
+    <!-- 必须能点击 -->
+    <CheckBox
+        android:id="@+id/image"
+        style="@style/ClassicCheck"
+        android:layout_margin="@dimen/classic_item_comm_margin_primary" />
+
+
+</LinearLayout>

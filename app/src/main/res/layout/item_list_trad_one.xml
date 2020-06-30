@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap"
+    android:layout_margin="@dimen/classic_item_comm_margin_tertiary">
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary"
+        android:padding="@dimen/classic_item_comm_padding_tertiary"
+        >
+
+        <TextView
+            style="@style/ClassicTextTertiaryColored"
+            android:text="主要症状：" />
+
+        <TextView
+            android:id="@+id/id_tv"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="意识障碍" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_ll_cb_container_shff"
+        style="@style/ClassicLinearV.MatchWrap">
+
+        <!--<include layout="@layout/layout_content_cb_shff" />-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

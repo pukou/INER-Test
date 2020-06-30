@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="sliding_menu_behind_offset">120dp</dimen>
+    <dimen name="sliding_menu_shadow_width">15dp</dimen>
+    <dimen name="actionbar_title_max_width">120dp</dimen>
+    <dimen name="keyboard_height">50dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- comm -->
+    <dimen name="api21FixedEditTextSpacing">0dp</dimen>
+    <dimen name="classicTabLayoutHeight">38dp</dimen>
+    <!-- text sp -->
+    <dimen name="classicTextSizeLarge">22sp</dimen>
+    <dimen name="classicTextSizeMedium">18sp</dimen>
+    <dimen name="classicTextSizeSmall">14sp</dimen>
+    <dimen name="classicTextSizeMicro">12sp</dimen>
+    <!-- text dp -->
+    <!--<dimen name="classic_text_size_big">@dimen/classicTextSizeLarge</dimen>-->
+    <dimen name="classic_text_size_primary">@dimen/classicTextSizeMedium</dimen>
+    <dimen name="classic_text_size_secondary">@dimen/classicTextSizeSmall</dimen>
+    <dimen name="classic_text_size_tertiary">@dimen/classicTextSizeMicro</dimen>
+    <!--<dimen name="classic_text_size_quaternary">10sp</dimen>-->
+    <dimen name="classic_image_icon_width_primary">56dp</dimen>
+    <dimen name="classic_image_icon_height_primary">56dp</dimen>
+    <dimen name="classic_image_icon_width_secondary">36dp</dimen>
+    <dimen name="classic_image_icon_height_secondary">36dp</dimen>
+    <!--   <dimen name="classic_image_icon_width_tertiary">24dp</dimen>
+       <dimen name="classic_image_icon_height_tertiary">24dp</dimen>-->
+    <dimen name="classic_image_icon_width_tertiary">56dp</dimen>
+    <dimen name="classic_image_icon_height_tertiary">56dp</dimen>
+
+    <!-- <dimen name="classic_image_icon_padding_primary">10dp</dimen>
+     <dimen name="classic_image_icon_padding_secondary">8dp</dimen>-->
+
+    <dimen name="classic_image_user_face_width">120dp</dimen>
+    <dimen name="classic_image_user_face_height">120dp</dimen>
+
+    <dimen name="classic_button_width">48dp</dimen>
+    <dimen name="classic_button_height">48dp</dimen>
+
+    <dimen name="classic_divider_height_big">6dp</dimen>
+    <dimen name="classic_divider_height_primary">1dp</dimen>
+    <dimen name="classic_divider_height_secondary">2px</dimen>
+    <dimen name="classic_divider_height_tertiary">1px</dimen>
+
+    <dimen name="classic_divider_radius_primary">1dp</dimen>
+    <dimen name="classic_divider_radius_secondary">2px</dimen>
+
+    <dimen name="classic_view_width_primary">48dp</dimen>
+    <dimen name="classic_view_height_primary">48dp</dimen>
+    <dimen name="classic_view_width_secondary">42dp</dimen>
+    <dimen name="classic_view_height_secondary">42dp</dimen>
+    <dimen name="classic_view_width_tertiary">36dp</dimen>
+    <dimen name="classic_view_height_tertiary">36dp</dimen>
+
+    <dimen name="classic_space_height_primary">16dp</dimen>
+    <dimen name="classic_space_height_secondary">8dp</dimen>
+
+    <dimen name="classic_drawable_padding_primary">2dp</dimen>
+    <!--<dimen name="classic_drawable_padding_secondary">1dp</dimen>-->
+
+    <dimen name="classic_item_comm_margin_big">16dp</dimen>
+    <dimen name="classic_item_comm_padding_big">16dp</dimen>
+
+    <dimen name="classic_item_comm_padding_10">10dp</dimen>
+    <dimen name="classic_item_comm_margin_10">10dp</dimen>
+
+    <dimen name="classic_item_comm_margin_primary">8dp</dimen>
+    <dimen name="classic_item_comm_padding_primary">8dp</dimen>
+    <dimen name="classic_item_comm_margin_secondary">6dp</dimen>
+    <dimen name="classic_item_comm_padding_secondary">6dp</dimen>
+    <dimen name="classic_item_comm_margin_tertiary">4dp</dimen>
+    <dimen name="classic_item_comm_padding_tertiary">4dp</dimen>
+    <dimen name="classic_item_comm_margin_quaternary">2dp</dimen>
+    <dimen name="classic_item_comm_padding_quaternary">2dp</dimen>
+
+    <dimen name="classic_layer_list_item_hide_divider_primary">-2dp</dimen>
+    <dimen name="classic_layer_list_item_hide_divider_secondary">-1dp</dimen>
+    <dimen name="__picker_item_directory_height">80dp</dimen>
+</resources>

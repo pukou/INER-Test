@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary">
+
+    <TextView
+        android:id="@+id/FYMC"
+        style="@style/ClassicTextSecondary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        tools:text="FYMC" />
+
+    <LinearLayout style="@style/ClassicLinearV.AutoWrap">
+
+        <TextView
+            android:id="@+id/FYDJ"
+            style="@style/ClassicTextSecondary"
+            tools:text="FYDJ" />
+
+        <TextView
+            android:id="@+id/FYSL"
+            style="@style/ClassicTextSecondary"
+            tools:text="FYSL" />
+
+        <TextView
+            android:id="@+id/ZJJE"
+            style="@style/ClassicTextSecondary"
+            tools:text="ZJJE" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <!--！！！未改-->
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:minHeight="50.0dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ZXZT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:minWidth="20.0dp"
+            tools:text="ZXZT"
+            android:textSize="@dimen/classic_text_size_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MC"
+            style="@style/ClassicTextEllipsizeEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            tools:text="MC"
+            android:textSize="@dimen/classic_text_size_primary" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/XL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            tools:text="XL"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/classic_text_size_primary" />
+        <!--不可点击 注意 list 推荐用itemclick 操作check 状态 -->
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@style/ClassicCheckNoClickable"
+            android:layout_marginRight="10dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boxView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="10.0dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/allName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            tools:text="allName"
+            android:textSize="@dimen/classic_text_size_primary" />
+
+        <TextView
+            android:id="@+id/PXFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            tools:text="PXFF"
+            android:textSize="@dimen/classic_text_size_primary" />
+
+        <LinearLayout
+            style="@style/ClassicLinearH.MatchWrap" >
+
+            <TextView
+                android:id="@+id/ABO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                tools:text="ABO"
+                android:textSize="@dimen/classic_text_size_primary" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/XDH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                tools:text="XDH"
+                android:textSize="@dimen/classic_text_size_primary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/YYRQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            tools:text="YYRQ"
+            android:textSize="@dimen/classic_text_size_primary" />
+
+        <TextView
+            android:id="@+id/DQRQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            tools:text="DQRQ"
+            android:textSize="@dimen/classic_text_size_primary" />
+
+        <TextView
+            android:id="@+id/KSSJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="KSSJ"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="@dimen/classic_text_size_primary" />
+
+        <TextView
+            android:id="@+id/JSSJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="JSSJ"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="@dimen/classic_text_size_primary" />
+
+        <TextView
+            android:id="@+id/SXR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            tools:text="SXR"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="@dimen/classic_text_size_primary" />
+
+        <TextView
+            android:id="@+id/JSR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            tools:text="JSR"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="@dimen/classic_text_size_primary" />
+    </LinearLayout>
+
+</LinearLayout>

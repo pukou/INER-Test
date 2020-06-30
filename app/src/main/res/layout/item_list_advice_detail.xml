@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap">
+
+    <TextView
+        android:id="@+id/ZXZT"
+        style="@style/ClassicTextSecondary"
+        android:layout_gravity="right"
+        tools:text="dasdasdasda" />
+
+    <TextView
+        android:id="@+id/JHSJ"
+        style="@style/ClassicTextSecondaryColored"
+        tools:text="dsad" />
+
+    <TextView
+        android:id="@+id/KSSJ"
+        style="@style/ClassicTextSecondaryColored"
+        tools:text="dsad" />
+
+    <TextView
+        android:id="@+id/JSSJ"
+        style="@style/ClassicTextSecondaryColored"
+        tools:text="dsad" />
+
+</LinearLayout>

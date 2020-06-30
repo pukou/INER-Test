@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicFrame"
+    tools:context=".activity.user.RiskEvaluateActivity">
+
+    <LinearLayout
+        android:id="@+id/form_body"
+        style="@style/ClassicLinearV.MatchWrap">
+
+        <com.bsoft.mob.ienr.view.BsoftActionBar
+            android:id="@+id/actionbar"
+            style="@style/ClassicActionBar" />
+
+        <LinearLayout style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="总分：" />
+
+            <TextView
+                android:id="@+id/risk_edit_goal"
+                style="@style/ClassicTextSecondary.AutoWrap" />
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="等级：" />
+
+            <TextView
+                android:id="@+id/risk_edit_level"
+                style="@style/ClassicTextSecondary.AutoWrap" />
+
+            <TextView
+                android:id="@+id/risk_check"
+                style="@style/ClassicTextSecondary" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_item_bar_image" />
+
+        <android.support.v4.widget.NestedScrollView style="@style/ClassicScroll">
+
+            <LinearLayout
+                android:id="@+id/risk_edit_root"
+                style="@style/ClassicLinearV.MatchWrap"
+                android:layout_marginLeft="@dimen/classic_item_comm_margin_10"
+                android:layout_marginRight="@dimen/classic_item_comm_margin_10" />
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/form_template_body"
+        style="@style/ClassicFrame" />
+
+
+</FrameLayout>

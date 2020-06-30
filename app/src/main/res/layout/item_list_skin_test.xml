@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap">
+
+
+    <TextView
+        android:id="@+id/id_yzmc"
+        style="@style/ClassicTextSecondary"
+        android:padding="1dp"
+        tools:text="id_yzmc" />
+
+    <TextView
+        android:id="@+id/id_pstm"
+        style="@style/ClassicTextSecondary"
+        android:padding="1dp"
+        tools:text="id_pstm" />
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/id_pslb"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:padding="1dp"
+            tools:text="id_pslb" />
+
+        <TextView
+            android:id="@+id/id_pszt"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:padding="1dp"
+            tools:text="id_pszt" />
+
+        <TextView
+            android:id="@+id/id_psjg"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:padding="1dp"
+            tools:text="id_psjg" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+
+        <TextView
+            android:id="@+id/id_ksgh"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:padding="1dp"
+            tools:text="id_ksgh" />
+
+
+        <TextView
+            android:id="@+id/id_kssj"
+            style="@style/ClassicTextSecondary"
+            android:padding="1dp"
+            tools:text="id_kssj" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+
+        <TextView
+            android:id="@+id/id_jsgh"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:padding="1dp"
+            tools:text="id_jsgh" />
+
+        <TextView
+            android:id="@+id/id_jssj"
+            style="@style/ClassicTextSecondary"
+            android:padding="1dp"
+            tools:text="id_jssj" />
+
+    </LinearLayout>
+
+</LinearLayout>

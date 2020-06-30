@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <LinearLayout
+        style="@style/ClassicLinearH.MatchWrap"
+        android:background="@drawable/shape_classic_bg_view_bottom">
+
+        <com.classichu.vectortextview.ClassicVectorTextView
+            android:id="@+id/id_tv"
+            style="@style/ClassicTextPrimary"
+            android:background="@drawable/selector_classic_bg_click_primary"
+            android:drawableRight="@drawable/ic_chevron_left_black_24dp"
+            app:classic_tint="@color/colorAccent" />
+
+        <TextView
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:gravity="center"
+            android:text="核对数据" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/id_sv"
+        style="@style/ClassicScroll.MatchAuto"
+        android:background="@color/classicViewBgDark" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+    <TextView
+        android:id="@+id/id_tv_for_bar_image"
+        style="@style/ClassicTextSecondaryColored"
+        android:text="时间：" />
+
+    <TextView
+        android:id="@+id/id_tv_2_for_bar_image"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        tools:text="dasdasdasdasd" />
+
+    <ImageView
+        android:id="@+id/id_iv_for_bar_image"
+        style="@style/ClassicImage.Colored"
+        android:src="@drawable/ic_date_range_black_24dp" />
+</LinearLayout>

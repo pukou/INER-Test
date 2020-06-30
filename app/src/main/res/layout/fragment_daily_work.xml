@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <include layout="@layout/layout_checkable_check" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <FrameLayout style="@style/ClassicFrame">
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView"
+                android:layout_margin="@dimen/classic_item_comm_margin_secondary"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/classic_divider_height_big"
+                tools:listitem="@layout/item_list_daily_work" />
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

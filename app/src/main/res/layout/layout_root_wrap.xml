@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nex3z.flowlayout.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_fl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:flChildSpacing="auto"
+    app:flChildSpacingForLastRow="auto"
+    app:flRowSpacing="1dp" />

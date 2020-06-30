@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicListItemVertical">
+
+    <TextView
+        android:id="@+id/XMMC"
+        style="@style/ClassicTextPrimary"
+        android:padding="@dimen/classic_item_comm_margin_tertiary"
+        tools:text="XMMC" />
+
+    <TextView
+        android:id="@+id/TZNR"
+        style="@style/ClassicTextSecondary"
+        android:padding="@dimen/classic_item_comm_margin_quaternary"
+        tools:text="TZNR" />
+
+    <TextView
+        android:id="@+id/CJSJ"
+        style="@style/ClassicTextSecondary"
+        android:padding="@dimen/classic_item_comm_margin_quaternary"
+        tools:text="CJSJ" />
+
+    <TextView
+        android:id="@+id/FCBZ"
+        style="@style/ClassicTextSecondary"
+        android:padding="@dimen/classic_item_comm_margin_quaternary"
+        tools:text="FCBZ" />
+
+    <TextView
+        android:id="@+id/XMXB"
+        style="@style/ClassicTextSecondary"
+        android:padding="@dimen/classic_item_comm_margin_quaternary"
+        tools:text="XMXB" />
+
+
+  <!--  <LinearLayout
+        android:id="@+id/boxview"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/burlywood"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:visibility="gone"/>-->
+
+</LinearLayout>

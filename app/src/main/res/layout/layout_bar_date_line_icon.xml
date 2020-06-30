@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary">
+
+    <TextView
+        style="@style/ClassicTextSecondaryColored"
+        android:text="时间点：" />
+
+    <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+        android:id="@+id/id_spinner_layout"
+        style="@style/ClassicSpinner.AutoWrap" />
+
+    <ImageView
+        android:id="@+id/glucose_search"
+        style="@style/ClassicImage"
+        android:src="@drawable/selector_classic_icon_search" />
+</LinearLayout>

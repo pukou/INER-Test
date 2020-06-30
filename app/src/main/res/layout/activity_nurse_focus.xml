@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap"
+    tools:context=".activity.user.NurseFocusActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="问题" />
+
+        <EditText
+            android:id="@+id/nurseform_problem"
+            style="@style/ClassicEdit.AutoWrap" />
+
+        <TextView
+            android:id="@+id/nurseform_evaluatestaus"
+            style="@style/ClassicTextSecondary"
+            tools:text="dasdasda" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_item_bar_spinner" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe">
+
+        <android.support.v4.widget.NestedScrollView style="@style/ClassicScroll">
+
+            <LinearLayout style="@style/ClassicLinearV.MatchWrap">
+
+
+                <LinearLayout style="@style/ClassicLinearControlBarPrimary">
+
+                    <TextView
+                        style="@style/ClassicTextSecondary.AutoWrap"
+                        android:text="诊断依据：" />
+
+                    <ImageView
+                        android:id="@+id/nurseplan_gist_add"
+                        style="@style/ClassicImage.Colored"
+                        android:contentDescription="添加诊断依据"
+                        android:src="@drawable/ic_create_black_24dp" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/id_rv"
+                    style="@style/ClassicRecyclerView" />
+
+                <LinearLayout style="@style/ClassicLinearControlBarPrimary">
+
+                    <TextView
+                        style="@style/ClassicTextSecondary.AutoWrap"
+                        android:text="护理措施" />
+
+                    <ImageView
+                        android:id="@+id/nurseplan_measure_addGroup"
+                        style="@style/ClassicImage.Colored"
+                        android:contentDescription="按组添加护理措施"
+                        android:src="@drawable/ic_add_circle_black_24dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/id_rv_2"
+                    style="@style/ClassicRecyclerView" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

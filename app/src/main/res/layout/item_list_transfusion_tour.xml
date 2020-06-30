@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <LinearLayout
+        android:id="@+id/tf_main_view"
+        style="@style/ClassicListItem"
+        android:padding="@dimen/classic_item_comm_padding_primary">
+        <!--可点击  该xml item 点击和 checkbox 点击 功能分离 -->
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@style/ClassicCheck"
+            tools:text="cb" />
+
+        <TextView
+            android:id="@+id/ZXZT"
+            style="@style/ClassicTextSecondary"
+            tools:text="ZXZT" />
+
+        <TextView
+            android:id="@+id/YZMC"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="1454311111312311adasda1DSADASDASDASDASDASDA" />
+
+        <ImageView
+            android:id="@+id/advice_arrow_img"
+            style="@style/ClassicImage.Colored"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tf_boxview"
+        android:padding="@dimen/classic_item_comm_padding_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/allName"
+            style="@style/ClassicTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="allName" />
+
+        <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+
+            <TextView
+                android:id="@+id/JLXX"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="JLXX" />
+
+            <TextView
+                android:id="@+id/SLXX"
+                style="@style/ClassicTextSecondary.AutoWrap"
+                tools:text="SLXX" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/KSSJ"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="KSSJ" />
+
+        <TextView
+            android:id="@+id/JSSJ"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="JSSJ" />
+
+        <TextView
+            android:id="@+id/SYSJ"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            tools:text="SYSJ" />
+
+    </LinearLayout>
+
+</LinearLayout>

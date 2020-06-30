@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearV.MatchWrap">
+
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="测量时点:" />
+
+        <com.bsoft.mob.ienr.view.expand.SpinnerLayout
+            android:id="@+id/id_spinner_layout_CLSD"
+            style="@style/ClassicSpinner.AutoWrap"
+            android:layout_weight="3" />
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="手录时间:" />
+
+        <EditText
+            android:id="@+id/CLSJ_CUSTOM"
+            style="@style/ClassicEdit.AutoWrap" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_item_bar_image" />
+
+    <!--<include layout="@layout/layout_item_bar_image_copy" />-->
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="测量值:" />
+
+        <!--   <EditText
+               android:id="@+id/CLZ"
+               style="@style/ClassicEdit.AutoWrap" />-->
+        <com.bsoft.mob.ienr.view.expand.ClassicDropSelectEditView
+            android:id="@+id/CLZ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="测量人:" />
+
+        <TextView
+            android:id="@+id/CLR"
+            style="@style/ClassicTextSecondary.AutoWrap" />
+
+    </LinearLayout>
+
+</LinearLayout>

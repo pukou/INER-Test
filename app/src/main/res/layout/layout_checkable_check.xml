@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicCheckableBar.Bottom"
+    android:padding="@dimen/classic_item_comm_padding_primary"
+    >
+    <TextView
+        android:id="@+id/id_tv"
+        style="@style/ClassicTextSecondaryColored"
+        tools:text="测试：" />
+    <!-- 必须能点击 -->
+    <CheckBox
+        android:id="@+id/id_cb"
+        style="@style/ClassicCheck.AutoWrap"
+        android:checked="true"
+        tools:text="测试" />
+    <!-- 必须能点击 -->
+    <CheckBox
+        android:id="@+id/id_cb_2"
+        style="@style/ClassicCheck.AutoWrap"
+        tools:text="测试2" />
+</LinearLayout>

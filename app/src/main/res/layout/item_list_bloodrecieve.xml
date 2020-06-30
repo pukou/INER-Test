@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_root"
+    style="@style/ClassicLinearV.MatchWrap"
+    android:background="@drawable/selector_classic_bg_click_white">
+    <!--不可点击 注意 list 推荐用itemclick 操作check 状态 -->
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/ClassicCheckNoClickable" />
+
+    <LinearLayout style="@style/ClassicLinearH">
+
+        <TextView
+            android:id="@+id/list_item_brxm"
+            style="@style/ClassicTextSecondary"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/list_item_brxb"
+            style="@style/ClassicTextSecondary"
+            android:layout_toRightOf="@+id/list_item_brnl"
+            android:text="男" />
+
+        <TextView
+            android:id="@+id/list_item_brnl"
+            style="@style/ClassicTextSecondary"
+            android:layout_toRightOf="@+id/list_item_brxb"
+            android:text="29岁" />
+
+        <TextView
+            android:id="@+id/list_item_brch"
+            style="@style/ClassicTextSecondary"
+            android:layout_toRightOf="@+id/list_item_brxb"
+            android:text="10床" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item_container1"
+        style="@style/ClassicLinearH">
+
+
+        <TextView
+            android:id="@+id/list_item_sjhs"
+            style="@style/ClassicTextSecondary"
+            android:text="29岁" />
+
+        <TextView
+            android:id="@+id/list_item_sjsj"
+            style="@style/ClassicTextSecondary"
+            android:text="29岁" />
+
+        <TextView
+            android:id="@+id/list_item_sjhg"
+            style="@style/ClassicTextSecondary"
+            android:text="29岁" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item_container2"
+        style="@style/ClassicLinearH">
+
+        <TextView
+            android:id="@+id/list_item_qshs"
+            style="@style/ClassicTextSecondary"
+            android:text="29岁" />
+
+        <TextView
+            android:id="@+id/list_item_qssj"
+            style="@style/ClassicTextSecondary"
+            android:text="29岁" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe">
+
+        <LinearLayout style="@style/ClassicLinearH">
+
+
+            <ExpandableListView
+                android:id="@+id/id_elv"
+                tools:listitem="@layout/item_list_group_daily_tour"
+                style="@style/ClassicExpandableListView.AutoMatch" />
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8">
+
+                <LinearLayout
+                    android:id="@+id/visit_panel"
+                    style="@style/ClassicLinearV">
+
+                    <TextView
+                        style="@style/ClassicTextSecondary"
+                        android:text="@string/visit_state_of_illness" />
+
+                    <android.support.v4.widget.NestedScrollView style="@style/ClassicScroll">
+
+                        <RadioGroup
+                            android:id="@+id/visit_state_rp"
+                            style="@style/ClassicRadio.WrapWrap"
+                            android:background="@null" />
+                    </android.support.v4.widget.NestedScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/history_panel"
+                    style="@style/ClassicLinearV"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        style="@style/ClassicTextSecondary"
+                        android:text="@string/visit_history" />
+
+                    <ListView
+                        android:id="@+id/id_lv"
+                        tools:listitem="@layout/item_list_visit_history"
+                        style="@style/ClassicListView.MatchAuto" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

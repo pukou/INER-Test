@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+
+    <LinearLayout style="@style/ClassicCheckableBar">
+
+        <TextView
+            android:id="@+id/glucose_but1"
+            style="@style/ClassicCheckablePrimary"
+            android:text="血糖" />
+
+
+        <TextView
+            android:id="@+id/glucose_but2"
+            style="@style/ClassicCheckablePrimary"
+            android:text="胰岛素" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_bar_date_line_icon" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe">
+
+        <LinearLayout style="@style/ClassicLinearV">
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView.MatchAuto"
+                tools:listitem="@layout/item_list_batch_glucose"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+
+            <TextView
+                style="@style/ClassicTextPrimary"
+                android:text="执行情况:" />
+
+            <ListView
+                android:id="@+id/id_lv_2"
+                style="@style/ClassicListView.MatchAuto"
+                android:layout_weight="3"
+                tools:listitem="@layout/item_list_batch_glucose_complete"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+

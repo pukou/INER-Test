@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearH.MatchWrap">
+
+    <TextView
+        android:id="@+id/id_tv"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:text="症状" />
+
+    <TextView
+        android:id="@+id/id_tv_2"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:text="类别" />
+
+    <TextView
+        android:id="@+id/id_tv_3"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:text="内容" />
+
+    <TextView
+        android:id="@+id/id_tv_4"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:text="状态" />
+
+    <TextView
+        android:id="@+id/id_tv_5"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:text="时间" />
+
+</LinearLayout>

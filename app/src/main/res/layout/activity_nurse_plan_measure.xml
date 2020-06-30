@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.user.NursePlanMeasureActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary">
+
+        <TextView
+            style="@style/ClassicTextSecondary"
+            android:text="操作方式:" />
+        <!-- 必须能点击 -->
+        <CheckBox
+            android:id="@+id/nurseplan_start"
+            style="@style/ClassicCheck.AutoWrap"
+            android:checked="true"
+            android:text="开始" />
+        <!-- 必须能点击 -->
+        <CheckBox
+            android:id="@+id/nurseplan_end"
+            style="@style/ClassicCheck.AutoWrap"
+            android:text="结束" />
+
+        <ImageView
+            android:id="@+id/nurseplan_measure_add"
+            style="@style/ClassicImage.Colored"
+            android:contentDescription="自定义护理措施"
+            android:src="@drawable/ic_mode_edit_black_24dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_item_bar_image" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <FrameLayout style="@style/ClassicFrame">
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView"
+                tools:listitem="@layout/item_list_nurseplan_measure" />
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

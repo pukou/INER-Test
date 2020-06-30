@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.BatchHandOverActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout
+        android:id="@+id/id_ll_controller"
+        style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="@string/care_record_datetime" />
+
+        <TextView
+            android:id="@+id/nurse_datetime_txt"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="dasdasdas" />
+
+        <Button
+            android:id="@+id/btnBatchCheck"
+            style="@style/ClassicButtonSmall"
+            android:text="一键核对"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <!--<com.bsoft.mob.ienr.view.expand.ViewPagerSwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe">-->
+        <!-- 滑动页，显示宣教分类及宣教项目 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_vp"
+            style="@style/ClassicViewPager" />
+   <!-- </com.bsoft.mob.ienr.view.expand.ViewPagerSwipeRefreshLayout>-->
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarSecondary"
+    android:descendantFocusability="blocksDescendants">
+
+    <CheckBox
+        android:id="@+id/id_cb"
+        style="@style/ClassicCheck"
+        />
+
+    <TextView
+        android:id="@+id/id_tv_name"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        tools:text="文字可有可无" />
+
+    <TextView
+        android:id="@+id/id_tv"
+        style="@style/ClassicTextSecondary"
+        tools:text="文字可有可无" />
+</LinearLayout>

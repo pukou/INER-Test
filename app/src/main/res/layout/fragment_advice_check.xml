@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+
+    <include
+        android:id="@+id/id_ll_container"
+        layout="@layout/layout_checkable_text"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+        <LinearLayout
+            android:id="@+id/slt_plantime"
+            style="@style/ClassicLinearV.WrapWrap">
+
+            <TextView
+                android:id="@+id/plantime_title"
+                style="@style/ClassicTextTertiaryColored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/advice_plandate" />
+
+            <TextView
+                android:id="@+id/plantime"
+                style="@style/ClassicTextTertiary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="31231231" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/id_rg_status_advice_check"
+            style="@style/ClassicRadio.Horizontal.AutoWrap"
+            android:background="@drawable/shape_classic_bg_view"
+            android:padding="@dimen/classic_divider_height_secondary">
+
+            <RadioButton
+                android:id="@+id/id_rb_status_1_advice_check"
+                style="@style/ClassicCheckableTertiary.NoBorder"
+                android:checked="true"
+                android:text="待核对" />
+
+            <RadioButton
+                android:id="@+id/id_rb_status_2_advice_check"
+                style="@style/ClassicCheckableTertiary.NoBorder"
+                android:text="已核对" />
+
+        </RadioGroup>
+
+
+        <ImageView
+            android:id="@+id/search"
+            style="@style/ClassicImage"
+            android:src="@drawable/selector_classic_icon_search" />
+        <!--可点击  必须能点击 -->
+        <CheckBox
+            android:id="@+id/id_cb"
+            style="@style/ClassicCheck" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_radio_group_three" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <com.bsoft.mob.ienr.view.expand.NoScrollViewPager
+            android:id="@+id/id_vp"
+            style="@style/ClassicViewPager" />
+
+        <!--    <FrameLayout style="@style/ClassicFrame">
+
+                <ListView
+                    android:id="@+id/id_lv"
+                    style="@style/ClassicListView" />
+
+                <ListView
+                    android:id="@+id/id_lv_2"
+                    style="@style/ClassicListView"
+                    android:visibility="gone" />
+            </FrameLayout>-->
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

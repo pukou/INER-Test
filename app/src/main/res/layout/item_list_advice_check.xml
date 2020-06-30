@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicListItemVertical">
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/t_sydh"
+            style="@style/ClassicTextSecondary"
+            android:text="单号:" />
+
+        <TextView
+            android:id="@+id/sydh"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="dsadasdas" />
+
+        <TextView
+            android:id="@+id/jhsj"
+            style="@style/ClassicTextSecondary.AutoWrap" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            android:id="@+id/brxm"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="brxm" />
+
+        <TextView
+            android:id="@+id/brch"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="brch" />
+
+        <TextView
+            android:id="@+id/hdxx"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="hdxx" />
+
+        <TextView
+            android:id="@+id/byhdr"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:visibility="gone"
+            tools:text="byhdr"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/jyhdr"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:visibility="gone"
+            tools:text="jyhdr"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/jyhdsj"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:visibility="gone"
+            tools:text="jyhdsj"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/byhdsj"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:visibility="gone"
+            tools:text="byhdsj"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

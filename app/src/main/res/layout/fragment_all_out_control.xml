@@ -1,0 +1,26 @@
+<!-- 升级编号【56010038】============================================= start
+外出管理PDA上只有登记功能，查询需要找到具体的人再查询，不太方便，最好能有一个查询整个病区外出病人的列表
+================= classichu 2018/3/7 19:49
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context="com.bsoft.mob.ienr.fragment.AllOutControlFragment">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_rv"
+            style="@style/ClassicRecyclerView" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+<!-- =============================================================== end -->

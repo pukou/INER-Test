@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="51.0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/glucose_but1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="血糖"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/classic_text_size_primary" />
+
+            <ImageView
+                android:id="@+id/glucose_img1"
+                android:layout_width="match_parent"
+                android:layout_height="4.0dp"
+                android:background="@color/colorPrimaryDark" />
+        </LinearLayout>
+        <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:background="#c6c2c2"-->
+        <!--android:layout_marginTop="5dp"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/glucose_but2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="胰岛素"
+                android:textSize="@dimen/classic_text_size_primary" />
+
+            <ImageView
+                android:id="@+id/glucose_img2"
+                android:layout_width="match_parent"
+                android:layout_height="4.0dp"
+                android:background="@color/colorPrimaryDark"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/ClassicDividerViewMatchExactly" />
+
+    <include layout="@layout/layout_item_bar_spinner" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/id_swipe_refresh_layout"
+                style="@style/ClassicSwipe.MatchAuto">
+
+                <FrameLayout style="@style/ClassicFrame">
+
+                    <ListView
+                        android:id="@+id/batch_blood_glucose_person_list"
+                        style="@style/ClassicListView"
+                        tools:listitem="@layout/item_list_text_two_vert_secondary_selected" />
+                </FrameLayout>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <LinearLayout
+                android:id="@+id/batch_blood_glucose_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/batch_blood_glucose_temporary"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/batch_glucose_input"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3" />
+
+                    <TextView
+                        android:id="@+id/batch_glucose_unit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/id_lv"
+                    style="@style/ClassicListView.MatchAuto"
+                    android:visibility="invisible"
+                    tools:listitem="@layout/item_list_batch_glucose"
+                    tools:visibility="visible" />
+
+                <View style="@style/ClassicDividerViewMatchExactly" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  执行情况:"
+                    android:textSize="@dimen/classic_text_size_primary"
+                    android:textStyle="bold" />
+
+                <View style="@style/ClassicDividerViewMatchExactly" />
+
+                <ListView
+                    android:id="@+id/id_lv_2"
+                    style="@style/ClassicListView.MatchAuto"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:visibility="invisible"
+                    tools:listitem="@layout/item_list_batch_insulin_complete"
+                    tools:visibility="visible" />
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/batch_blood_glucose_root_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10.0dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingBottom="15dp">-->
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

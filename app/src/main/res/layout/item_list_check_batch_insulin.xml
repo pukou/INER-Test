@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--不可点击 注意 list 推荐用itemclick 操作check 状态 -->
+
+    <CheckBox
+        android:id="@+id/item_batch_insulin_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        style="@style/ClassicCheckNoClickable"
+        android:textSize="@dimen/classic_text_size_primary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_batch_insulin_number"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/classic_text_size_primary"
+        android:textStyle="bold"
+        tools:text="dsadasdadsa" />
+
+    <TextView
+        android:id="@+id/item_batch_insulin_input"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center|right"
+        tools:text="dsadasdadsa" />
+
+    <TextView
+        android:id="@+id/item_batch_insulin_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:text="dsadasdadsa" />
+
+
+</LinearLayout>

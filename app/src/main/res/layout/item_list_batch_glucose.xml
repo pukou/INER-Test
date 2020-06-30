@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassicLinearH.MatchWrap">
+
+    <EditText
+        android:id="@+id/item_batch_glucose_input"
+        style="@style/ClassicEdit.AutoWrap"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/item_batch_glucose_unit"
+        style="@style/ClassicTextSecondary"
+        android:text="mmol/L" />
+</LinearLayout>

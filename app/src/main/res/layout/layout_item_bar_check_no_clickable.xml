@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary.Bottom"
+    android:descendantFocusability="blocksDescendants">
+    <!--   android:descendantFocusability="blocksDescendants" 直接获得焦点-->
+    <TextView
+        android:id="@+id/id_tv_for_bar_check"
+        style="@style/ClassicTextSecondaryColored"
+        tools:text="id_tv" />
+
+    <TextView
+        android:id="@+id/healthguid_datetime_txt"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        tools:text="2015-11-30 12:00" />
+    <!-- 该 xml 只用于 不可点击 -->
+    <CheckBox
+        style="@style/ClassicCheckNoClickable"
+        android:id="@+id/healthguid_cbpre"
+    />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary">
+
+        <TextView
+            android:id="@+id/ann_history_nurse"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:text="宣教人" />
+
+        <TextView
+            android:id="@+id/ann_history_paitent"
+            style="@style/ClassicTextSecondary"
+            android:text="宣教对象" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ann_history_pro"
+        tools:text="ann_history_pro"
+        style="@style/ClassicTextSecondary.MatchWrap" />
+
+    <TextView
+        android:id="@+id/ann_history_time"
+        tools:text="ann_history_time"
+        style="@style/ClassicTextSecondary.MatchWrap" />
+
+</LinearLayout>

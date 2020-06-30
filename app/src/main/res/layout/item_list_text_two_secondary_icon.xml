@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary">
+
+    <TextView
+        android:id="@+id/detail_name"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        tools:text="dasda" />
+
+    <TextView
+        android:id="@+id/detail_num"
+        style="@style/ClassicTextSecondary.AutoWrap"
+        tools:text="dasda" />
+
+    <com.classichu.vectortextview.ClassicVectorTextView
+        android:id="@+id/id_tv_more"
+        style="@style/ClassicTextSecondary"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        app:classic_tint="@color/colorAccent"
+        tools:text="文字可有可无" />
+</LinearLayout>

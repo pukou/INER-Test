@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap">
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="首次评分：" />
+
+        <TextView
+            android:id="@+id/id_tv"
+            style="@style/ClassicTextSecondary"
+            tools:text="6" />
+
+        <TextView
+            android:id="@+id/id_tv_2"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:gravity="right"
+            tools:text="2018-1-9 11:32:55" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="首次分级：" />
+
+        <TextView
+            android:id="@+id/id_tv_3"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="昏迷" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="最新评分：" />
+
+        <TextView
+            android:id="@+id/id_tv_4"
+            style="@style/ClassicTextSecondary"
+            tools:text="6" />
+
+        <TextView
+            android:id="@+id/id_tv_5"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            android:gravity="right"
+            tools:text="2018-1-9 11:32:55" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ClassicLinearH.MatchWrap">
+
+        <TextView
+            style="@style/ClassicTextSecondaryColored"
+            android:text="最新分级：" />
+
+        <TextView
+            android:id="@+id/id_tv_6"
+            style="@style/ClassicTextSecondary.AutoWrap"
+            tools:text="昏迷" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

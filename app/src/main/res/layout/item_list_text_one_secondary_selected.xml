@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV.MatchWrap"
+    android:background="@drawable/selector_classic_bg_selected"
+    >
+
+    <TextView
+        android:id="@+id/id_tv"
+        style="@style/ClassicTextSecondary"
+        android:padding="@dimen/classic_item_comm_margin_primary"
+        tools:text="ewqeqweq" />
+</LinearLayout>

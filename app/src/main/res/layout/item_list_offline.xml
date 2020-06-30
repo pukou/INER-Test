@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary">
+
+    <LinearLayout style="@style/ClassicLinearV.AutoWrap">
+
+        <TextView
+            android:id="@+id/patient"
+            style="@style/ClassicTextPrimary"
+            tools:text="dsadas" />
+
+        <TextView
+            android:id="@+id/form"
+            style="@style/ClassicTextSecondary"
+            tools:text="dsadas" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/delete"
+        style="@style/ClassicImage.Colored"
+        android:contentDescription="删除"
+        android:src="@drawable/ic_delete_forever_black_24dp" />
+
+    <ImageView
+        android:id="@+id/submit"
+        style="@style/ClassicImage.Colored"
+        android:contentDescription="保存"
+        android:src="@drawable/ic_save_black_24dp" />
+
+</LinearLayout>

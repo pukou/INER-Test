@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 升级编号【56010022】============================================= start
+护理记录:可以查看项目最近3次的记录，可以选择其中一次的数据到当前的护理记录单上。
+================= Classichu 2017/10/18 10:36
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearControlBarPrimary">
+
+    <LinearLayout style="@style/ClassicLinearV.AutoWrap">
+
+        <TextView
+            android:id="@+id/id_tv_one"
+            style="@style/ClassicTextPrimary"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="dasdasdasda" />
+
+        <TextView
+            android:id="@+id/id_tv_two"
+            style="@style/ClassicTextSecondary"
+            android:padding="@dimen/classic_item_comm_padding_tertiary"
+            tools:text="2222" />
+    </LinearLayout>
+
+    <com.classichu.vectortextview.ClassicVectorTextView
+        android:id="@+id/id_tv_more"
+        style="@style/ClassicTextSecondary"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        app:classic_tint="@color/colorAccent"
+        tools:text="文字可有可无" />
+</LinearLayout><!-- =============================================================== end -->

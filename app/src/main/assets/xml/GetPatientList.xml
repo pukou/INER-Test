@@ -1,0 +1,168 @@
+<DataSet>
+
+    <xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+        id="NewDataSet" >
+        <xs:element
+            name="NewDataSet"
+            msdata:IsDataSet="true"
+            msdata:UseCurrentLocale="true" >
+            <xs:complexType>
+                <xs:choice
+                    maxOccurs="unbounded"
+                    minOccurs="0" >
+                    <xs:element name="Table1" >
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element
+                                    name="BRXM"
+                                    minOccurs="0"
+                                    type="xs:string" />
+                                <xs:element
+                                    name="ZYH"
+                                    minOccurs="0"
+                                    type="xs:decimal" />
+                                <xs:element
+                                    name="BRBQ"
+                                    minOccurs="0"
+                                    type="xs:decimal" />
+                                <xs:element
+                                    name="BRCH"
+                                    minOccurs="0"
+                                    type="xs:string" />
+                                <xs:element
+                                    name="FFZT"
+                                    minOccurs="0"
+                                    type="xs:string" />
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:choice>
+            </xs:complexType>
+        </xs:element>
+    </xs:schema>
+
+    <diffgr:diffgram
+        xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1"
+        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" >
+        <NewDataSet>
+            <Table1
+                diffgr:id="Table11"
+                msdata:rowOrder="0" >
+                <BRXM>
+张平雨
+                </BRXM>
+
+                <ZYH>
+13
+                </ZYH>
+
+                <BRBQ>
+31
+                </BRBQ>
+
+                <BRCH>
+101
+                </BRCH>
+
+                <FFZT>
+1
+                </FFZT>
+            </Table1>
+            <Table1
+                diffgr:id="Table14"
+                msdata:rowOrder="1" >
+                <BRXM>
+董一铭
+                </BRXM>
+
+                <ZYH>
+42
+                </ZYH>
+
+                <BRBQ>
+31
+                </BRBQ>
+
+                <BRCH>
+105
+                </BRCH>
+
+                <FFZT>
+1
+                </FFZT>
+            </Table1>
+            <Table1
+                diffgr:id="Table17"
+                msdata:rowOrder="2" >
+                <BRXM>
+蔡畅
+                </BRXM>
+
+                <ZYH>
+45
+                </ZYH>
+
+                <BRBQ>
+31
+                </BRBQ>
+
+                <BRCH>
+108
+                </BRCH>
+
+                <FFZT>
+2
+                </FFZT>
+            </Table1>
+            <Table1
+                diffgr:id="Table113"
+                msdata:rowOrder="3" >
+                <BRXM>
+孙丽
+                </BRXM>
+
+                <ZYH>
+219
+                </ZYH>
+
+                <BRBQ>
+31
+                </BRBQ>
+
+                <BRCH>
+114
+                </BRCH>
+
+                <FFZT>
+2
+                </FFZT>
+            </Table1>
+            <Table1
+                diffgr:id="Table131"
+                msdata:rowOrder="4" >
+                <BRXM>
+欧阳文倩
+                </BRXM>
+
+                <ZYH>
+40
+                </ZYH>
+
+                <BRBQ>
+31
+                </BRBQ>
+
+                <BRCH>
+103
+                </BRCH>
+
+                <FFZT>
+0
+                </FFZT>
+            </Table1>
+        </NewDataSet>
+    </diffgr:diffgram>
+
+</DataSet>

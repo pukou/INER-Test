@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <LinearLayout style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+        <LinearLayout
+            android:id="@+id/slt_stime_ly"
+            style="@style/ClassicLinearV.AutoWrap">
+
+            <TextView
+                android:id="@+id/stime_title"
+
+                style="@style/ClassicTextSecondaryColored"
+                android:text="@string/daily_time_title" />
+
+            <TextView
+                android:id="@+id/daily_time_txt"
+                style="@style/ClassicTextSecondary"
+                android:text="@string/date_str" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/slt_etime_ly"
+            style="@style/ClassicLinearV.AutoWrap">
+
+            <TextView
+                style="@style/ClassicTextSecondaryColored"
+                android:text="当前病人:" />
+
+            <TextView
+                android:id="@+id/out_control_name_txt"
+                style="@style/ClassicTextSecondary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe">
+
+        <LinearLayout style="@style/ClassicLinearV">
+
+            <LinearLayout style="@style/ClassicLinearH.MatchAuto">
+
+                <ListView
+                    android:id="@+id/id_lv"
+                    tools:listitem="@layout/item_list_text_one_secondary_selected"
+                    style="@style/ClassicListView.AutoMatch" />
+
+                <ListView
+                    android:id="@+id/id_lv_2"
+                    style="@style/ClassicListView.AutoMatch"
+                    tools:listitem="@layout/layout_item_bar_check_no_clickable"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/ClassicLinearV.MatchAuto">
+
+                <TextView
+                    style="@style/ClassicTextSecondary"
+                    android:text="@string/daily_did_project" />
+
+                <ListView
+                    android:id="@+id/id_lv_3"
+                    tools:listitem="@layout/layout_item_bar_check_no_clickable"
+                    style="@style/ClassicListView.MatchAuto" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

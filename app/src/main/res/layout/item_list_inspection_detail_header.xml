@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearH.MatchWrap">
+
+    <TextView
+        android:id="@+id/JCSJ"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:text="项目名称" />
+
+    <TextView
+        android:id="@+id/JCMC"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:text="检验结果" />
+
+    <TextView
+        android:id="@+id/BWMS"
+        style="@style/ClassicTextPrimary.AutoWrap"
+        android:text="参考范围" />
+
+    <TextView
+        android:id="@+id/JCYS"
+        style="@style/ClassicTextPrimary"
+        android:text="标识" />
+
+</LinearLayout>

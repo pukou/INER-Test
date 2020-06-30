@@ -1,0 +1,253 @@
+<DataSet>
+
+    <xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+        id="NewDataSet" >
+        <xs:element
+            name="NewDataSet"
+            msdata:IsDataSet="true"
+            msdata:UseCurrentLocale="true" >
+            <xs:complexType>
+                <xs:choice
+                    maxOccurs="unbounded"
+                    minOccurs="0" >
+                    <xs:element name="Table1" >
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element
+                                    name="YHID"
+                                    minOccurs="0"
+                                    type="xs:string" />
+                                <xs:element
+                                    name="RID"
+                                    minOccurs="0"
+                                    type="xs:int" />
+                                <xs:element
+                                    name="YHXM"
+                                    minOccurs="0"
+                                    type="xs:string" />
+                                <xs:element
+                                    name="XTSJ"
+                                    minOccurs="0"
+                                    type="xs:string" />
+                                <xs:element
+                                    name="JGID"
+                                    minOccurs="0"
+                                    type="xs:decimal" />
+                                <xs:element
+                                    name="YHDM"
+                                    minOccurs="0"
+                                    type="xs:string" />
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Table2" >
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element
+                                    name="YGDM"
+                                    minOccurs="0"
+                                    type="xs:string" />
+                                <xs:element
+                                    name="KSDM"
+                                    minOccurs="0"
+                                    type="xs:decimal" />
+                                <xs:element
+                                    name="MRBZ"
+                                    minOccurs="0"
+                                    type="xs:int" />
+                                <xs:element
+                                    name="KSMC"
+                                    minOccurs="0"
+                                    type="xs:string" />
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Table3" >
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element
+                                    name="Time"
+                                    minOccurs="0"
+                                    type="xs:dateTime" />
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:choice>
+            </xs:complexType>
+        </xs:element>
+    </xs:schema>
+
+    <diffgr:diffgram
+        xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1"
+        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" >
+        <NewDataSet>
+            <Table1
+                diffgr:id="Table11"
+                msdata:rowOrder="0" >
+                <YHID>
+3
+                </YHID>
+
+                <YHXM>
+管理员
+                </YHXM>
+
+                <XTSJ />
+
+                <JGID>
+1
+                </JGID>
+
+                <YHDM>
+8800
+                </YHDM>
+            </Table1>
+
+            <Table2
+                diffgr:id="Table21"
+                msdata:rowOrder="0" >
+                <YGDM>
+3
+                </YGDM>
+
+                <KSDM>
+31
+                </KSDM>
+
+                <MRBZ>
+1
+                </MRBZ>
+
+                <KSMC>
+1病区
+                </KSMC>
+            </Table2>
+            <Table2
+                diffgr:id="Table22"
+                msdata:rowOrder="1" >
+                <YGDM>
+3
+                </YGDM>
+
+                <KSDM>
+32
+                </KSDM>
+
+                <MRBZ>
+0
+                </MRBZ>
+
+                <KSMC>
+2病区
+                </KSMC>
+            </Table2>
+            <Table2
+                diffgr:id="Table23"
+                msdata:rowOrder="2" >
+                <YGDM>
+3
+                </YGDM>
+
+                <KSDM>
+33
+                </KSDM>
+
+                <MRBZ>
+0
+                </MRBZ>
+
+                <KSMC>
+3病区
+                </KSMC>
+            </Table2>
+            <Table2
+                diffgr:id="Table24"
+                msdata:rowOrder="3" >
+                <YGDM>
+3
+                </YGDM>
+
+                <KSDM>
+34
+                </KSDM>
+
+                <MRBZ>
+0
+                </MRBZ>
+
+                <KSMC>
+4病区
+                </KSMC>
+            </Table2>
+            <Table2
+                diffgr:id="Table25"
+                msdata:rowOrder="4" >
+                <YGDM>
+3
+                </YGDM>
+
+                <KSDM>
+35
+                </KSDM>
+
+                <MRBZ>
+0
+                </MRBZ>
+
+                <KSMC>
+5病区
+                </KSMC>
+            </Table2>
+            <Table2
+                diffgr:id="Table26"
+                msdata:rowOrder="5" >
+                <YGDM>
+3
+                </YGDM>
+
+                <KSDM>
+68
+                </KSDM>
+
+                <MRBZ>
+0
+                </MRBZ>
+
+                <KSMC>
+12病区
+                </KSMC>
+            </Table2>
+            <Table2
+                diffgr:id="Table27"
+                msdata:rowOrder="6" >
+                <YGDM>
+3
+                </YGDM>
+
+                <KSDM>
+69
+                </KSDM>
+
+                <MRBZ>
+0
+                </MRBZ>
+
+                <KSMC>
+20病区
+                </KSMC>
+            </Table2>
+
+            <Table3
+                diffgr:id="Table31"
+                diffgr:hasChanges="inserted"
+                msdata:rowOrder="0" >
+                <Time>
+2014-06-04T11:51:26.937+08:00
+                </Time>
+            </Table3>
+        </NewDataSet>
+    </diffgr:diffgram>
+
+</DataSet>

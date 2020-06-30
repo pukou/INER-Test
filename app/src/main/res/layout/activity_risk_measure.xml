@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClassicLinearV"
+    tools:context=".activity.user.RiskMeasureActivity">
+
+    <com.bsoft.mob.ienr.view.BsoftActionBar
+        android:id="@+id/actionbar"
+        style="@style/ClassicActionBar" />
+
+    <include layout="@layout/layout_item_bar_image" />
+
+    <LinearLayout
+        android:id="@+id/riskmeasure_view"
+        style="@style/ClassicLinearControlBarPrimary.Bottom">
+
+        <TextView
+            android:id="@+id/nurse_txt"
+            style="@style/ClassicTextSecondaryColored"
+            android:text="执行护士：" />
+
+        <TextView
+            android:id="@+id/riskmeasure_nurse"
+            style="@style/ClassicTextSecondary.AutoWrap" />
+
+        <TextView
+            android:id="@+id/riskevalute_state"
+            style="@style/ClassicTextSecondary" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        style="@style/ClassicSwipe.MatchAuto">
+
+        <FrameLayout style="@style/ClassicFrame">
+
+            <ListView
+                android:id="@+id/id_lv"
+                style="@style/ClassicListView"
+                tools:listitem="@layout/layout_item_bar_check" />
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/riskmeasuer_evaluate"
+        style="@style/ClassicLinearV.MatchWrap">
+
+      <!--fixmee  <include layout="@layout/layout_item_bar_spinner" />
+
+        <include layout="@layout/layout_item_bar_image_copy" />
+-->
+        <include layout="@layout/layout_item_bar_check" />
+
+        <LinearLayout
+            android:id="@+id/evaluate_form"
+            style="@style/ClassicLinearControlBarPrimary">
+
+            <TextView
+                style="@style/ClassicTextSecondary"
+                android:text="评价人：" />
+
+            <TextView
+                android:id="@+id/riskevaluate_nurse"
+                style="@style/ClassicTextSecondary.MatchWrap" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

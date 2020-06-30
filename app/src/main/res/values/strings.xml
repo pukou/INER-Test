@@ -1,0 +1,292 @@
+<resources>
+
+    <!--<string name="app_name">IENR5.6.01</string>-->
+    <string name="app_name">移动护理</string>
+    <string name="app_name_debug">[测试]移动护理</string>
+    <string name="dateSliderTitle">选择日期</string>
+    <string name="notif_down_file">下载</string>
+    <string name="downloadSuccess">下载成功，点击安装</string>
+    <string name="downloadFailure">下载失败，点击返回</string>
+
+    <!-- 登录页 -->
+    <string name="login_usrname">账 号:</string>
+    <string name="login_pwd">密 码:</string>
+    <string name="login_usrname_default">8800</string>
+    <string name="login_copyright_en">Copying@2018 BSOFT All Rights Reserved</string>
+    <string name="login_copyright_zh">创业软件 版权所有</string>
+    <string name="login_login">登录</string>
+    <string name="login_setter">APP配置</string>
+    <string name="login_select_agency">选择机构</string>
+    <string name="login_usrname_hint">请输入用户名</string>
+    <string name="login_pwd_hint">请输入密码</string>
+
+    <!-- 签名页 -->
+    <string name="sign_sign">验证</string>
+    <string name="sign_cancel">取消</string>
+
+    <!-- 费用查询页有关 -->
+    <string name="expense_collect">汇总</string>
+    <string name="expense_detail">明细</string>
+
+    <!-- 医嘱执行页有关 -->
+    <string name="spa_slt_date">选择日期</string>
+
+    <!-- 检验检查页有关 -->
+    <string name="inspection_inspect">检验</string>
+    <string name="inspection_check">检查</string>
+
+    <!-- 体征查询页 -->
+    <string name="lsi_title">体征查询</string>
+
+    <!-- 输液巡视 -->
+    <string name="transfusion_slt_date">选择\n日期</string>
+
+    <!-- 医嘱查询页 -->
+    <string name="advice_tmp">临时医嘱</string>
+    <string name="advice_invalid">无效</string>
+
+    <!-- 医嘱核对页 -->
+    <string name="advice_checked">已核对</string>
+    <string name="advice_tocheck">待核对</string>
+    <string name="advice_refresh">刷新</string>
+    <string name="advice_all">全部</string>
+    <string name="advice_injection">注射</string>
+    <string name="advice_infusion">输液</string>
+    <string name="advice_plandate">计划用药日期</string>
+    <string name="advice_split_img">分割线</string>
+    <string name="advice_despense">摆药</string>
+    <string name="advice_blend">加药</string>
+    <string name="pulltorefresh_txt">下拉刷新</string>
+
+    <!-- 今日工作页 -->
+    <string name="list_item_left_button">忽略</string>
+    <string name="list_item_right_button">去处理</string>
+
+    <!-- 设置页 -->
+    <string name="setting_notif_vib">震动提醒</string>
+    <string name="setting_notif_log">记录日志</string>
+    <string name="setting_notif_barcode">条码转换</string>
+
+    <!-- 升级编号【56010049】============================================= start
+    病人列表:管理员可设置是否禁用病人列表点击进入：默认不禁用
+    ================= Classichu 2017/10/18 9:32
+    -->
+    <string name="setting_sicker_item_can_not_click">病人列表不可点击</string>
+    <!-- =============================================================== end -->
+    <string name="setting_voice">音频音量</string>
+    <string name="setting_category_net_setting">网络交互设置</string>
+    <string name="setting_ip">.Net服务端IP</string>
+    <string name="setting_ip_java">Java服务端IP</string>
+    <string name="setting_push_ip">推送服务IP</string>
+    <string name="setting_ip_hint">IP地址，如192.168.1.1</string>
+    <string name="setting_port">.Net服务端端口</string>
+    <string name="setting_port_java">Java服务端端口</string>
+    <string name="setting_port_hint">端口号，如9335</string>
+    <string name="setting_push_port">推送服务端口</string>
+    <string name="setting_ssid">SSID</string>
+    <string name="setting_ssid_hint">WIFI连接名</string>
+    <string name="setting_ssid_password">SSID密码</string>
+    <string name="setting_ssid_password_hint">WIFI连接密码</string>
+    <string name="setting_ip_local">网络连接类型</string>
+    <string name="setting_ip_local_address">本地IP地址</string>
+    <string name="setting_gateway">本地网关</string>
+    <string name="setting_wlan_name1">域名1</string>
+    <string name="setting_wlan_name2">域名2</string>
+    <string name="setting_net_lenght">网络前缀长度</string>
+    <string name="setting_net_lenght_hint">如输入24</string>
+    <string name="setting_main_menu">主导航条</string>
+    <string name="setting_user_menu">病人导航航条</string>
+    <string name="setting_my_group_menu">责任组</string>
+    <string name="setting_tips">小提示：配制静态IP需要跳到终端WIFI配制页，点击跳转按钮吧</string>
+    <string name="setting_go">跳转</string>
+    <string name="setting_scan">浏览</string>
+    <string name="setting_secret_type">加密类型</string>
+    <string name="setting_pda_type">PDA型号</string>
+
+    <!-- 病人巡视页 -->
+    <string name="visit_state_of_illness">巡视情况:</string>
+    <string name="visit_history">巡视记录:</string>
+    <string name="visit_with_record">记录附加:</string>
+    <string name="visit_save">保存</string>
+    <string name="visit_reset">重置</string>
+    <string name="visit_state_good">转好</string>
+    <string name="visit_state_bad">恶化</string>
+    <string name="visit_state_other">其他</string>
+    <string name="visit_bed_time">%1$s\%2$tF</string>
+    <!--  -->
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- 病人宣教 页 -->
+    <string name="ann_did_project">已宣教项目：</string>
+    <string name="ann_time_title">宣教时间：</string>
+    <string name="ann_objs_title">宣教对象：</string>
+
+    <!-- crash report -->
+    <string name="crash_report_msg">对不起，程序出现了问题，工作人员会尽快处理&#8230;</string>
+    <string name="splash_net_times">正在尝试第%1$d次连接&#8230;</string>
+
+    <!-- all -->
+    <string name="loading">加载中&#8230;</string>
+    <string name="saveing">正在保存&#8230;</string>
+    <string name="deleteing">正在删除&#8230;</string>
+    <string name="reviewing">正在审阅&#8230;</string>
+    <string name="cancel_reviewing">取消审阅&#8230;</string>
+    <string name="signing">正在签名&#8230;</string>
+    <string name="cancel_signing">正在取消签名&#8230;</string>
+    <string name="doing">正在执行&#8230;</string>
+    <string name="binding">正在绑定&#8230;</string>
+    <string name="cancel_binding">解除绑定&#8230;</string>
+    <string name="long_save_tip">提示：长按列表项可发放或执行操作</string>
+    <string name="date_time_str">%1$tF %1$tR</string>
+    <string name="date_str">%1$tF</string>
+    <string name="time_str">%1$tR</string>
+    <string name="format_date_time">%1$tF %1$tT</string>
+    <string name="format_date">%1$tF</string>
+    <string name="format_time">%1$tT</string>
+    <string name="reload">刷新</string>
+    <string name="start_date">起始\n日期</string>
+    <string name="stop_date">结束\n日期</string>
+    <string name="start_time">起始时间</string>
+    <string name="end_time">结束时间</string>
+
+    <string name="project_save_success">保存成功</string>
+    <string name="project_save_failed">保存失败</string>
+    <string name="project_submit_success">提交成功</string>
+    <string name="project_submit_failed">提交失败</string>
+    <string name="project_operate_ok">确定</string>
+    <string name="project_operate_cancel">取消</string>
+    <string name="project_tips">温馨提示</string>
+
+    <string name="setting_test_url_success">连接成功</string>
+    <string name="setting_test_url_failed">连接失败</string>
+
+    <string name="menu_back">&lt; 返回</string>
+    <!-- mqtt -->
+    <string name="subscribe_topic">订阅主题包括：</string>
+    <string name="txt_close">关闭窗口</string>
+
+    <!-- 日常护理 -->
+    <string name="daily_time_title">护理时间：</string>
+    <string name="daily_did_project">已护理项目：</string>
+
+    <!-- 消息展示页 -->
+    <string name="msg_close">关闭</string>
+    <string name="msg_to_page">更多</string>
+
+    <!-- 外出管理页 -->
+    <string name="out_control_name">%1$s</string>
+    <string name="out_control_with">陪同人员：</string>
+    <string name="out_control_relation">关系：</string>
+    <string name="out_control_plan_out_time">请求外出时间：</string>
+    <string name="out_control_out_time">外出时间：</string>
+    <string name="out_control_plan_back_time">预计回床时间：</string>
+    <string name="out_control_back_time">回床时间：</string>
+    <string name="out_control_wcyy">外出描述：</string>
+    <string name="out_control_out_reason">外出描述，建议填写</string>
+    <string name="out_control_save">登记</string>
+
+    <!-- 输血医嘱页 -->
+    <string name="transfusion_blood_state_all">全部</string>
+    <string name="transfusion_blood_state_did">已执行</string>
+    <string name="transfusion_blood_state_todo">未执行</string>
+    <string name="transfusion_blood_state_doing">执行中</string>
+    <string name="transfusion_blood_all">全部（血袋号和血种类可扫描核对）</string>
+
+    <!-- 药品医嘱 -->
+    <string name="advice_action_tag">执行</string>
+    <string name="advice_refuse_tag">拒绝</string>
+    <string name="advice_muliti_tag">多路</string>
+
+    <!-- 护理记录页 -->
+    <string name="care_record_datetime">填写时间：</string>
+    <string name="care_record_another_page">换页</string>
+
+
+    <!-- 护理评估 -->
+    <string name="sign">签名</string>
+    <string name="save">保存</string>
+
+    <!-- 二维码扫描相关 -->
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <string name="bhys_title">血液查询</string>
+
+    <!-- 交接单 -->
+    <string name="hand_over_jsbq">接收病区：</string>
+
+    <string name="tip_login_ing">登录中</string>
+    <string name="tip_login_load_agency">获取机构</string>
+
+    <string name="tip_login_load_pdainfo">获取PDAInfo</string>
+    <string name="setting_pda_custom_barcode">自定义扫描头适配器</string>
+
+    <string name="tip_save_success">保存成功</string>
+    <string name="tip_save_error">保存失败</string>
+
+    <string name="tip_login_error">登录失败</string>
+    <string name="tip_get_agency_error">获取机构失败</string>
+    <string name="tip_analyze_agency_error">解析机构失败</string>
+
+    <string name="tip_barcode_null">条码为空</string>
+    <string name="tip_barcode_admin">暂不支持管理员条码登录</string>
+
+    <string name="begin_date">起始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="setting_test">测试</string>
+
+
+    <string name="main_menu_my">我的</string>
+    <string name="main_menu_max">特级</string>
+    <string name="main_menu_1">Ⅰ级</string>
+    <string name="main_menu_2">Ⅱ级</string>
+    <string name="main_menu_3">Ⅲ级</string>
+    <string name="main_menu_all">病区</string>
+    <string name="main_menu_today_out">出院</string>
+
+    <string name="comm_menu_refuse">拒绝</string>
+    <string name="comm_menu_more">更多</string>
+    <string name="comm_menu_jiankong">监控</string>
+    <string name="comm_menu_refresh">刷新</string>
+    <string name="comm_menu_save">保存</string>
+    <string name="comm_menu_cancel">取消</string>
+    <string name="comm_menu_pause">暂停</string>
+    <string name="comm_menu_sign">签名</string>
+    <string name="comm_menu_view">查看</string>
+    <string name="comm_menu_add">新增</string>
+    <string name="comm_menu_add_item_zdcs">自定</string>
+    <string name="comm_menu_add_item">项目</string>
+    <string name="comm_menu_delete">删除</string>
+    <string name="comm_menu_reset">重置</string>
+    <string name="comm_menu_evaluate">评价</string>
+    <string name="comm_menu_terminate">终止</string>
+    <string name="comm_menu_check">审核</string>
+    <string name="comm_menu_risk">措施</string>
+    <string name="comm_menu_help">助手</string>
+    <string name="comm_menu_refer">引用</string>
+    <string name="comm_menu_review">审阅</string>
+    <string name="comm_menu_cancel_review">取消\n审阅</string>
+    <string name="comm_menu_cancel_sign">取消\n签名</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="__picker_title">图片</string>
+    <string name="__picker_delete">删除</string>
+    <string name="__picker_done">完成</string>
+    <string name="__picker_done_with_count">完成(%1$d/%2$d)</string>
+    <string name="__picker_image_index">%1$d/%2$d</string>
+    <string name="__picker_undo">Undo</string>
+    <string name="__picker_deleted_a_photo">删除照片</string>
+    <string name="__picker_confirm_to_delete">确认要删除?</string>
+    <string name="__picker_yes">确定</string>
+    <string name="__picker_cancel">取消</string>
+    <string name="__picker_all_image">所有照片</string>
+    <string name="__picker_image_count">%1$d</string>
+    <string name="__picker_over_max_count_tips">你只能选择 %1$d 照片</string>
+    <string name="normal">按住 说话</string>
+    <string name="recording">松开 结束</string>
+    <string name="want_to_cancle">松开手指，取消发送</string>
+    <string name="shouzhishanghua">手指上滑，取消发送</string>
+    <string name="tooshort">录音时间过短</string>
+    <string name="toolong">录音时间过长</string>
+</resources>
