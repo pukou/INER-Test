@@ -343,7 +343,7 @@ public class HealthGuidActivity extends BaseBarcodeActivity {
      */
     private void initActionBar() {
         actionBar.setTitle("健康教育");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
         actionBar.setBackAction(new Action() {
             @Override
             public String getText() {

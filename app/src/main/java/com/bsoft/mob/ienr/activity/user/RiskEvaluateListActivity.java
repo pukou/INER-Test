@@ -12,7 +12,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -31,7 +30,6 @@ import com.bsoft.mob.ienr.model.risk.RiskOverview;
 import com.bsoft.mob.ienr.model.risk.SimRiskRecord;
 import com.bsoft.mob.ienr.util.AgainLoginUtil;
 import com.bsoft.mob.ienr.util.tools.EmptyTool;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,7 +64,7 @@ public class RiskEvaluateListActivity extends BaseBarcodeActivity {
      */
     private void initActionBar() {
         actionBar.setTitle("风险评估");
-        actionBar.setPatient(application.sickPersonVo.BRCH
+        actionBar.setPatient(application.sickPersonVo.XSCH
                 + application.sickPersonVo.BRXM);
     }
 

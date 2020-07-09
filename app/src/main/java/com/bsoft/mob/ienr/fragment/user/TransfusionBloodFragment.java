@@ -162,7 +162,7 @@ public class TransfusionBloodFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                     mAdapter = null;
                     mListView.setAdapter(mAdapter);
@@ -336,7 +336,7 @@ public class TransfusionBloodFragment extends BaseUserFragment {
     private void initActionBar() {
 
         actionBar.setTitle("输血医嘱执行");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                 + mAppApplication.sickPersonVo.BRXM);
         actionBar.addAction(new Action() {
 

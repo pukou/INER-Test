@@ -31,7 +31,7 @@ public class OutControllerHistoryActivity extends BaseBarcodeActivity {
 	private ListView mListView;
 	private void initActionBar() {
 		actionBar.setTitle("外出记录");
-		actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+		actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
 
 	}
 

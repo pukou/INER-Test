@@ -244,7 +244,7 @@ public class AdviceListActivity extends BaseBarcodeActivity {
     private void initActionBar() {
 
         actionBar.setTitle("医嘱查询");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
         actionBar.addAction(new Action() {
             @Override
             public void performAction(View view) {

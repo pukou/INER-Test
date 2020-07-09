@@ -214,7 +214,7 @@ public class NurseEvaluateTemplateFragment extends BaseUserFragment {
         } else if (mCurrType == TYPE_RECORD_FORM) {
             actionBar.setTitle("评估单记录列表");
         }
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
     }
 
     private void initListView() {
@@ -508,7 +508,7 @@ public class NurseEvaluateTemplateFragment extends BaseUserFragment {
             public void onReceive(Context arg0, Intent intent) {
                 if (BarcodeActions.Refresh.equals(intent.getAction())) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                 }
             }

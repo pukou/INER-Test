@@ -228,7 +228,7 @@ public class OutControlFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(intent.getAction())) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                     initName();
                     toRefreshData();
@@ -327,7 +327,7 @@ public class OutControlFragment extends BaseUserFragment {
     private void initActionBar() {
 
         // actionBar.setTitle("外出登录");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                 + mAppApplication.sickPersonVo.BRXM);
         actionBar.addAction(new Action() {
 

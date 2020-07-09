@@ -23,14 +23,12 @@ import android.widget.Toast;
 
 import com.bsoft.mob.ienr.R;
 import com.bsoft.mob.ienr.activity.user.HealthGuidActivity;
+import com.bsoft.mob.ienr.adapter.HealthGuidListAdapter;
 import com.bsoft.mob.ienr.api.HealthGuidApi;
 import com.bsoft.mob.ienr.barcode.BarcodeActions;
-import com.bsoft.mob.ienr.event.BaseEvent;
 import com.bsoft.mob.ienr.event.EventType;
 import com.bsoft.mob.ienr.event.HealthGuidEvent;
-import com.bsoft.mob.ienr.event.RiskEvaluationEvent;
 import com.bsoft.mob.ienr.fragment.base.BaseUserFragment;
-import com.bsoft.mob.ienr.adapter.HealthGuidListAdapter;
 import com.bsoft.mob.ienr.model.Response;
 import com.bsoft.mob.ienr.model.healthguid.HealthGuid;
 import com.bsoft.mob.ienr.util.AgainLoginUtil;
@@ -125,7 +123,7 @@ public class HealthGuidFragment extends BaseUserFragment {
      */
     private void initActionBar() {
         actionBar.setTitle("健康教育");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                 + mAppApplication.sickPersonVo.BRXM);
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
@@ -155,7 +153,7 @@ public class HealthGuidFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                 }
             }

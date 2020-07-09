@@ -131,7 +131,7 @@ public class BloodSugarFragment extends BaseUserFragment {
                 BloodSugar item = new BloodSugar();
                 item.ZYH = application.sickPersonVo.ZYH;
                 item.SXBQ = application.getAreaId();
-                item.BRCH = application.sickPersonVo.BRCH;
+                item.BRCH = application.sickPersonVo.XSCH;
                 item.SXSJ = DateTimeHelper.getServer_yyyyMMddHHmm00();
                 item.SXGH = application.user.YHID;
                 item.SXXM = application.user.YHXM;
@@ -260,7 +260,7 @@ public class BloodSugarFragment extends BaseUserFragment {
     private void initActionBar() {
 
         actionBar.setTitle("血糖监测");
-        actionBar.setPatient(application.sickPersonVo.BRCH
+        actionBar.setPatient(application.sickPersonVo.XSCH
                 + application.sickPersonVo.BRXM);
     }
 
@@ -272,7 +272,7 @@ public class BloodSugarFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(application.sickPersonVo.BRCH
+                    actionBar.setPatient(application.sickPersonVo.XSCH
                             + application.sickPersonVo.BRXM);
                     performHttpTask();
                 } else if (BarcodeActions.Bar_Get.equals(action)) {
@@ -682,7 +682,7 @@ public class BloodSugarFragment extends BaseUserFragment {
                 e.printStackTrace();
             }
             return BloodSugarApi.getInstance(getActivity()).AddBloodSugar(application.sickPersonVo.ZYH,
-                    application.getAreaId(), application.sickPersonVo.BRCH, sxsj,
+                    application.getAreaId(), application.sickPersonVo.XSCH, sxsj,
                     application.user.YHID, application.user.YHID, clsd, item.CLZ, application.jgId);
         }
 

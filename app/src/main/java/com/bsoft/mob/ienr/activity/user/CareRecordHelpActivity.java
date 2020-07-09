@@ -129,7 +129,7 @@ public class CareRecordHelpActivity extends BaseBarcodeActivity {
 	private void initView() {
 
 		actionBar.setTitle("助手");
-		actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+		actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
 		 LinearLayout leftLayout = (LinearLayout) actionBar
 				.findViewById(R.id.leftLayout);
 		 /*ImageView leftImageView = (ImageView) actionBar

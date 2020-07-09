@@ -80,7 +80,7 @@ public class TraditionalNursingActivity extends BaseActivity {
             }
         });
         actionBar.setTitle("中医护理明细");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
         id_tv = (TextView) findViewById(R.id.id_tv);
         id_tv.setText("施护方法");
         id_tv_2 = (TextView) findViewById(R.id.id_tv_2);

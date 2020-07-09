@@ -213,7 +213,7 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
 
     private void initActionBar() {
         actionBar.setTitle(EmptyTool.isBlank(bdmc) ? "风险评估" : bdmc);
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
         actionBar.setBackAction(new Action() {
             @Override
             public String getText() {
@@ -582,7 +582,7 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
             record.PGZF = tv_goal.getText().toString();
             record.ZKMS = tv_level.getText().toString();
 
-            record.BRCH = mAppApplication.sickPersonVo.BRCH;
+            record.BRCH = mAppApplication.sickPersonVo.XSCH;
             record.BRXM = mAppApplication.sickPersonVo.BRXM;
             record.BDMC = "评估";//todo
             try {
@@ -675,7 +675,7 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
         root.removeAllViews();
         pgxh = record.PGXH;
         record.BDMC = EmptyTool.isBlank(bdmc) ? "风险评估" : bdmc;
-        record.BRCH = mAppApplication.sickPersonVo.BRCH;
+        record.BRCH = mAppApplication.sickPersonVo.XSCH;
         record.BRXM = mAppApplication.sickPersonVo.BRXM;
         new RiskEvaluateViewFactory(RiskEvaluateActivity.this, root, record.ZKGZ, record.FXYZ)
                 .build();
@@ -892,7 +892,7 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
             record.PGZF = tv_goal.getText().toString();
             record.ZKMS = tv_level.getText().toString();
 
-            record.BRCH = mAppApplication.sickPersonVo.BRCH;
+            record.BRCH = mAppApplication.sickPersonVo.XSCH;
             record.BRXM = mAppApplication.sickPersonVo.BRXM;
             record.BDMC = "评估";//todo
             try {

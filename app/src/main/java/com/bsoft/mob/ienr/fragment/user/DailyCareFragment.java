@@ -183,7 +183,7 @@ public class DailyCareFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                     secondMap.clear();
                     toRefreshData();
@@ -564,7 +564,7 @@ public class DailyCareFragment extends BaseUserFragment {
     private void initActionbar() {
 
         actionBar.setTitle("护理常规");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                 + mAppApplication.sickPersonVo.BRXM);
         actionBar.addAction(new Action() {
 

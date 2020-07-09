@@ -2,7 +2,6 @@ package com.bsoft.mob.ienr.model.kernel;
 
 import com.bsoft.mob.ienr.model.BaseVo;
 import com.bsoft.mob.ienr.model.bloodsugar.PersonBloodSugar;
-import com.bsoft.mob.ienr.model.inspection.SpecimenVo;
 import com.bsoft.mob.ienr.model.risk.RecondBean;
 import com.bsoft.mob.ienr.model.risk.ZKBean;
 
@@ -116,6 +115,10 @@ public class SickPersonVo extends BaseVo {
 	public boolean hasGMYP;//过敏药品
 	public List<PersonBloodSugar> personalBloodSugarList;//病人血糖列表
 
+	/**
+	 * 增加显示床号
+	 */
+	public String XSCH;
 
 	@Override
 	public boolean equals(Object o) {

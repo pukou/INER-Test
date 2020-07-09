@@ -159,7 +159,7 @@ public class InspectionFragment extends BaseUserFragment {
     private void initActionBar() {
 
         actionBar.setTitle("检验检查");
-        actionBar.setPatient(application.sickPersonVo.BRCH + application.sickPersonVo.BRXM);
+        actionBar.setPatient(application.sickPersonVo.XSCH + application.sickPersonVo.BRXM);
 
     }
 
@@ -451,7 +451,7 @@ public class InspectionFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                     if (current == 1) {
                         toRefreshData();

@@ -768,7 +768,7 @@ public class NursingEvaluateActivity extends BaseBarcodeActivity {
     private void initActionBar() {
 
         actionBar.setTitle("护理评估");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                 + mAppApplication.sickPersonVo.BRXM);
 
         actionBar.addAction(new Action() {

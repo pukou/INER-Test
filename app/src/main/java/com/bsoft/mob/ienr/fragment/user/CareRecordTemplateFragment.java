@@ -96,7 +96,7 @@ public class CareRecordTemplateFragment extends BaseUserFragment {
     private void initActionBar() {
 
         actionBar.setTitle("选择护理记录模板");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
 
     }
 
@@ -365,7 +365,7 @@ public class CareRecordTemplateFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                 } else if (BarcodeActions.Bar_Get.equals(action)) {
 

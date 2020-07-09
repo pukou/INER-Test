@@ -234,7 +234,7 @@ public class RiskMeasureActivity extends BaseBarcodeActivity {
 
     private void initActionBar() {
         actionBar.setTitle("风险评估措施");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
         actionBar.addAction(new Action() {
             @Override
             public String getText() {

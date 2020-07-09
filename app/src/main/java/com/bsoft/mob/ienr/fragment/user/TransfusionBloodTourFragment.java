@@ -200,7 +200,7 @@ public class TransfusionBloodTourFragment extends BaseUserFragment {
     private void initAcionBar() {
 
         actionBar.setTitle("输血巡视");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                 + mAppApplication.sickPersonVo.BRXM);
         actionBar.addAction(new Action() {
             @Override
@@ -252,7 +252,7 @@ public class TransfusionBloodTourFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                     toRefreshData();
                 } else if (BarcodeActions.Bar_Get.equals(action)) {

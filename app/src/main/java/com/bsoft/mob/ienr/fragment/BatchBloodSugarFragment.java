@@ -54,7 +54,6 @@ import com.bsoft.mob.ienr.model.bloodsugar.PersonBloodSugar;
 import com.bsoft.mob.ienr.model.kernel.SickPersonVo;
 import com.bsoft.mob.ienr.util.AgainLoginUtil;
 import com.bsoft.mob.ienr.util.FastSwitchUtils;
-import com.bsoft.mob.ienr.util.JsonUtil;
 import com.bsoft.mob.ienr.util.tools.EmptyTool;
 import com.bsoft.mob.ienr.view.BsoftActionBar;
 import com.bsoft.mob.ienr.view.expand.ClassicDropSelectEditView;
@@ -538,7 +537,7 @@ public class BatchBloodSugarFragment extends LeftMenuItemFragment {
         item = new BloodSugar();
         item.ZYH = mAppApplication.sickPersonVo.ZYH;
         item.SXBQ = application.getAreaId();
-        item.BRCH = mAppApplication.sickPersonVo.BRCH;
+        item.BRCH = mAppApplication.sickPersonVo.XSCH;
         item.SXSJ = DateTimeHelper.getServer_yyyyMMddHHmm00();
         item.SXGH = application.user.YHID;
         item.SXXM = application.user.YHXM;
@@ -1323,7 +1322,7 @@ public class BatchBloodSugarFragment extends LeftMenuItemFragment {
                 e.printStackTrace();
             }
             return BloodSugarApi.getInstance(getActivity()).AddBloodSugar(mAppApplication.sickPersonVo.ZYH,
-                    application.getAreaId(), mAppApplication.sickPersonVo.BRCH, sxsj,
+                    application.getAreaId(), mAppApplication.sickPersonVo.XSCH, sxsj,
                     application.user.YHID, application.user.YHID, clsd, item.CLZ, application.jgId);
         }
 

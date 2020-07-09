@@ -288,7 +288,7 @@ public class HandOverActivity extends BaseBarcodeActivity {
      */
     private void initActionBar() {
         actionBar.setTitle("护理交接");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
         actionBar.setBackAction(new Action() {
             @Override
             public String getText() {
@@ -532,7 +532,7 @@ public class HandOverActivity extends BaseBarcodeActivity {
             handOverRecord.ZYHM = mAppApplication.sickPersonVo.ZYHM;
             handOverRecord.BRXM = mAppApplication.sickPersonVo.BRXM;
             handOverRecord.BRXB = String.valueOf(mAppApplication.sickPersonVo.BRXB);
-            handOverRecord.BRCH = mAppApplication.sickPersonVo.BRCH;
+            handOverRecord.BRCH = mAppApplication.sickPersonVo.XSCH;
 
             //chaneg by louis
             if (mAppApplication.getCrrentArea() != null && "[isSurgery]".equals(mAppApplication.getCrrentArea().YGDM)) {
@@ -606,7 +606,7 @@ public class HandOverActivity extends BaseBarcodeActivity {
                 handOverRecord.ZYHM = mAppApplication.sickPersonVo.ZYHM;
                 handOverRecord.BRXM = mAppApplication.sickPersonVo.BRXM;
                 handOverRecord.BRXB = String.valueOf(mAppApplication.sickPersonVo.BRXB);
-                handOverRecord.BRCH = mAppApplication.sickPersonVo.BRCH;
+                handOverRecord.BRCH = mAppApplication.sickPersonVo.XSCH;
                 //chaneg by louis
                 if (mAppApplication.getCrrentArea() != null && "[isSurgery]".equals(mAppApplication.getCrrentArea().YGDM)) {
                     //标记是 手术科室

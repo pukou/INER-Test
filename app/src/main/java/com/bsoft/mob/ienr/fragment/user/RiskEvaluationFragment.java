@@ -31,7 +31,6 @@ import com.bsoft.mob.ienr.activity.user.RiskEvaluateActivity;
 import com.bsoft.mob.ienr.api.NurseFormApi;
 import com.bsoft.mob.ienr.barcode.BarcodeActions;
 import com.bsoft.mob.ienr.components.datetime.DateTimeHelper;
-import com.bsoft.mob.ienr.event.BaseEvent;
 import com.bsoft.mob.ienr.event.EventType;
 import com.bsoft.mob.ienr.event.RiskEvaluationEvent;
 import com.bsoft.mob.ienr.fragment.base.BaseUserFragment;
@@ -117,7 +116,7 @@ public class RiskEvaluationFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                 }
             }
@@ -133,7 +132,7 @@ public class RiskEvaluationFragment extends BaseUserFragment {
      */
     private void initActionBar() {
         actionBar.setTitle("风险评估");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                 + mAppApplication.sickPersonVo.BRXM);
     }
 

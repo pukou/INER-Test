@@ -714,7 +714,7 @@ public class NurseEvaluateActivity extends BaseBarcodeActivity {
     private void initActionBar() {
 
         actionBar.setTitle("护理评估");
-        actionBar.setPatient(application.sickPersonVo.BRCH
+        actionBar.setPatient(application.sickPersonVo.XSCH
                 + application.sickPersonVo.BRXM);
         actionBar.addAction(new Action() {
             @Override

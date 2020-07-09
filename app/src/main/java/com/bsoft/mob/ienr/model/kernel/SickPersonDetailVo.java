@@ -98,5 +98,9 @@ public class SickPersonDetailVo extends BaseVo {
 	 */
 	public String BRXX;
 
+	/**
+	 * 增加显示床号
+	 */
+	public String XSCH;
 
 }

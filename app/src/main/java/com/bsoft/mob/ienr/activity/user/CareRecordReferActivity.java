@@ -504,7 +504,7 @@ public class CareRecordReferActivity extends BaseBarcodeActivity {
     private void initActionBar() {
 
         actionBar.setTitle("引用查询");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
 
     }
 

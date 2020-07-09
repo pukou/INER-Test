@@ -74,7 +74,7 @@ public class CareRecordHistoryActivity extends BaseBarcodeActivity {
 	private void initActionBar() {
 
 		actionBar.setTitle("查看护理记录");
-		actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+		actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
 
 	}
 

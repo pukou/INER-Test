@@ -448,7 +448,7 @@ public class NurseFocusActivity extends BaseBarcodeActivity {
      */
     private void initActionBar() {
         actionBar.setTitle("护理焦点");
-        String brch = EmptyTool.isBlank(mAppApplication.sickPersonVo.BRCH) ? "" : mAppApplication.sickPersonVo.BRCH;
+        String brch = EmptyTool.isBlank(mAppApplication.sickPersonVo.XSCH) ? "" : mAppApplication.sickPersonVo.XSCH;
         actionBar.setPatient(brch + mAppApplication.sickPersonVo.BRXM);
         actionBar.setBackAction(new Action() {
 

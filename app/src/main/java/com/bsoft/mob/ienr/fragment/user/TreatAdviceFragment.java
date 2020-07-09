@@ -67,7 +67,7 @@ public class TreatAdviceFragment extends BaseUserFragment {
 	private void initActionBar() {
 
 		actionBar.setTitle("治疗医嘱");
-		actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+		actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
 				+ mAppApplication.sickPersonVo.BRXM);
 		actionBar.setBackAction(new Action() {
 

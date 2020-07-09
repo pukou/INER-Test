@@ -193,7 +193,7 @@ public class BloodGlucoseFragment extends BaseUserFragment {
     private void initActionBar() {
 
         actionBar.setTitle("血糖 / 胰岛素");
-        String brch = EmptyTool.isBlank(mAppApplication.sickPersonVo.BRCH) ? "" : mAppApplication.sickPersonVo.BRCH;
+        String brch = EmptyTool.isBlank(mAppApplication.sickPersonVo.XSCH) ? "" : mAppApplication.sickPersonVo.XSCH;
         actionBar.setPatient(brch + mAppApplication.sickPersonVo.BRXM);
         actionBar.setBackAction(new BsoftActionBar.Action() {
 

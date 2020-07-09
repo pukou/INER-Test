@@ -101,7 +101,7 @@ public class OxygenListActivity extends BaseBarcodeActivity {
     private void initActionBar() {
 
         actionBar.setTitle("输氧单");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
 
     }
 

@@ -192,7 +192,7 @@ public class NurseEvaluateFormListActivity extends BaseBarcodeActivity {
         } else if (mCurrType == TYPE_RECORD_FORM) {
             actionBar.setTitle("评估单记录列表");
         }
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH + mAppApplication.sickPersonVo.BRXM);
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH + mAppApplication.sickPersonVo.BRXM);
 
     }
 

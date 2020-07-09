@@ -72,7 +72,7 @@ public class BloodGlucoseHistoryActivity extends BaseBarcodeActivity {
     private void initActionBar() {
 
         actionBar.setTitle("血糖记录列表");
-        String brch = EmptyTool.isBlank(application.sickPersonVo.BRCH) ? "" : application.sickPersonVo.BRCH;
+        String brch = EmptyTool.isBlank(application.sickPersonVo.XSCH) ? "" : application.sickPersonVo.XSCH;
         actionBar.setPatient(brch + application.sickPersonVo.BRXM);
         actionBar.setBackAction(new BsoftActionBar.Action() {
             @Override

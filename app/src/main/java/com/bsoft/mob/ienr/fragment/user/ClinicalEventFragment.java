@@ -91,7 +91,7 @@ public class ClinicalEventFragment extends BaseUserFragment {
      */
     private void initActionBar() {
         actionBar.setTitle("临床事件");
-        String brch = EmptyTool.isBlank(mAppApplication.sickPersonVo.BRCH) ? "" : mAppApplication.sickPersonVo.BRCH;
+        String brch = EmptyTool.isBlank(mAppApplication.sickPersonVo.XSCH) ? "" : mAppApplication.sickPersonVo.XSCH;
         actionBar.setPatient(brch + mAppApplication.sickPersonVo.BRXM);
     }
 
@@ -111,7 +111,7 @@ public class ClinicalEventFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                 }
             }

@@ -192,7 +192,7 @@ public class AnnounceFragment extends BaseUserFragment {
                 String action = intent.getAction();
                 if (BarcodeActions.Refresh.equals(action)) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                     toRefreshData();
                 } else if (BarcodeActions.Bar_Get.equals(action)) {
@@ -659,7 +659,7 @@ public class AnnounceFragment extends BaseUserFragment {
 
         TextView mTitleTxt = (TextView) actionBar
                 .findViewById(R.id.titleTextView);
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                 + mAppApplication.sickPersonVo.BRXM);
         onPopupStateChange(false);
 

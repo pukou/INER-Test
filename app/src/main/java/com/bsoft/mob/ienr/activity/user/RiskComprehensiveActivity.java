@@ -81,7 +81,7 @@ public class RiskComprehensiveActivity extends BaseBarcodeActivity {
 
     private void initActionBar() {
         actionBar.setTitle("综合评估");
-        actionBar.setPatient(application.sickPersonVo.BRCH + application.sickPersonVo.BRXM);
+        actionBar.setPatient(application.sickPersonVo.XSCH + application.sickPersonVo.BRXM);
 
 
         actionBar.addAction(new BsoftActionBar.Action() {
