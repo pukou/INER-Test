@@ -374,7 +374,7 @@ public class SickPersonInfoFragment extends BaseUserFragment {
         List<AllergicDrug> allergicDrug = response.allergicDrugs;
 
         List<CharSequence> list = new ArrayList<>();
-        String brch = "床号：" + (EmptyTool.isBlank(person.BRCH) ? "无" : person.BRCH + "床");
+        String brch = "床号：" + (EmptyTool.isBlank(person.XSCH) ? "无" : person.XSCH + "床");
         list.add(brch);
         String brxm = "姓名：" + person.BRXM;
         String brxb = "    性别：" + (person.BRXB == 1 ? "男" : "女");

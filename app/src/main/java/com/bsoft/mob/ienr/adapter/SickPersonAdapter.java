@@ -217,7 +217,7 @@ public class SickPersonAdapter extends BaseAdapter {
                 vHolder.tv_hljb.setTextColor(ContextCompat.getColor(context, R.color.textColorPrimary));
                 vHolder.tv_hljb.setBackgroundResource(R.color.transparent);
         }
-        vHolder.tv_brch.setText(EmptyTool.isBlank(vo.BRCH) ? "无" : vo.BRCH + "床");
+        vHolder.tv_brch.setText(EmptyTool.isBlank(vo.XSCH) ? "无" : vo.XSCH + "床");
         // 中文加粗
         TextPaint tp = vHolder.tv_brch.getPaint();
         tp.setFakeBoldText(true);
