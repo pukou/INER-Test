@@ -187,7 +187,7 @@ public class SickPersonInfoFragment extends BaseUserFragment {
             return;
         }
         actionBar.setTitle("病人信息");
-        actionBar.setPatient(vo.BRCH + vo.BRXM);
+        actionBar.setPatient(vo.XSCH + vo.BRXM);
         text.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
