@@ -462,7 +462,8 @@ public class LifeSymptomFragment extends BaseUserFragment {
                 lifeSignSaveData.BQID = mAppApplication.getAreaId();
                 lifeSignSaveData.ZYH = mAppApplication.sickPersonVo.ZYH;
                 lifeSignSaveData.IsTemp = mLifeSymptomViewFactory.isTemp();
-                lifeSignSaveData.TempTime = mLifeSymptomViewFactory.getTmpTime();
+//                lifeSignSaveData.TempTime = mLifeSymptomViewFactory.getTmpTime();
+                lifeSignSaveData.TempTime = mLifeSymptomViewFactory.getSaveTime();
                 lifeSignSaveData.JGID = mAppApplication.jgId;
                 lifeSignSaveData.lifeSignSaveDataItemList = itemList;
                 lifeSignSaveData.customIsSync = customIsSync;
