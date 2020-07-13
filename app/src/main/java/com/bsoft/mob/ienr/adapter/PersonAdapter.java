@@ -69,7 +69,7 @@ public class PersonAdapter extends BaseAdapter {
         } else {
             vHolder.tv_brxm.setText(vo.BRXM);
         }
-        vHolder.tv_brch.setText(vo.BRCH);
+        vHolder.tv_brch.setText(vo.XSCH);
 
         boolean isZC = false;
         if (vo.personalBloodSugarList != null) {

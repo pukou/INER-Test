@@ -81,7 +81,8 @@ public class APIUrlConfig {
 
 //	public static final String DEFAULT_IP = "172.17.100.77";
 
-	public static final String DEFAULT_IP = "192.168.212.167";
+	public static final String DEFAULT_IP = "192.168.160.220";
+//	public static final String DEFAULT_IP = "192.168.212.167";
 
 	public static final String DEFAULT_PORT = "9361";
 

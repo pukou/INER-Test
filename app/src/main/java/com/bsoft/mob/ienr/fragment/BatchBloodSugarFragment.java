@@ -1322,7 +1322,7 @@ public class BatchBloodSugarFragment extends LeftMenuItemFragment {
                 e.printStackTrace();
             }
             return BloodSugarApi.getInstance(getActivity()).AddBloodSugar(mAppApplication.sickPersonVo.ZYH,
-                    application.getAreaId(), mAppApplication.sickPersonVo.XSCH, sxsj,
+                    application.getAreaId(), mAppApplication.sickPersonVo.BRCH, sxsj,
                     application.user.YHID, application.user.YHID, clsd, item.CLZ, application.jgId);
         }
 

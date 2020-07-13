@@ -491,7 +491,7 @@ public class DrugsAdviceFragment extends BaseUserFragment {
     private void initActionBar() {
 
         actionBar.setTitle("医嘱执行");
-        actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+        actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                 + mAppApplication.sickPersonVo.BRXM);
         actionBar.addAction(new Action() {
 
@@ -680,7 +680,7 @@ public class DrugsAdviceFragment extends BaseUserFragment {
             public void onReceive(Context context, Intent intent) {
                 if (BarcodeActions.Refresh.equals(intent.getAction())) {
                     sendUserName();
-                    actionBar.setPatient(mAppApplication.sickPersonVo.BRCH
+                    actionBar.setPatient(mAppApplication.sickPersonVo.XSCH
                             + mAppApplication.sickPersonVo.BRXM);
                     toRefreshData();
                 } else if (BarcodeActions.Bar_Get.equals(intent.getAction())) {
@@ -1163,7 +1163,7 @@ public class DrugsAdviceFragment extends BaseUserFragment {
                     showSuccessMsg("执行成功", result);
                     return;
                 }
-                //提示
+              /*  //提示
                 showMsgAndVoice("可以同步到护理记录单,是否需要执行同步?");
                 //需要提示同步
                 new AlertDialog.Builder(mFragmentActivity).setTitle("可以同步到护理记录单").setMessage("是否需要执行同步?")
@@ -1198,14 +1198,14 @@ public class DrugsAdviceFragment extends BaseUserFragment {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 //直接显示执行成功
-                             /*   String msg = isJingTui(result) ? "静推执行成功" : "执行成功";
-                                msg = isWeizhuBen(result) ? "微注泵推注执行成功" : msg;*/
+                             *//*   String msg = isJingTui(result) ? "静推执行成功" : "执行成功";
+                                msg = isWeizhuBen(result) ? "微注泵推注执行成功" : msg;*//*
                                 String msg = isJingTui(result) ? "执行成功" : "执行成功";
                                 msg = isWeizhuBen(result) ? "执行成功" : msg;
                                 showSuccessMsg(msg, result);
                             }
                         }).create().show();
-              /*  DialogManager.showClassicDialog(mFragmentActivity, "可以同步到护理记录单", "是否需要执行同步?",
+              *//*  DialogManager.showClassicDialog(mFragmentActivity, "可以同步到护理记录单", "是否需要执行同步?",
                         new OnBtnClickListener() {
                             @Override
                             public void onBtnClickOk(DialogInterface dialogInterface) {
@@ -1220,8 +1220,8 @@ public class DrugsAdviceFragment extends BaseUserFragment {
                                 //直接显示执行成功
                                 showSuccessMsg("执行成功");
                             }
-                        });*/
-                return;
+                        });*//*
+                return;*/
             }
             if (result.selectResult != null) {
                 if (result.selectResultCode == 0) {

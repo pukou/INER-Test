@@ -203,7 +203,7 @@ public class VisitAdapter extends BaseExpandableListAdapter {
         vHolder.tv_brxm.setText(result.BRXM);
         StringBuilder sb = new StringBuilder("暂无床号");
         if (result.BRCH != null) {
-            sb = new StringBuilder(result.BRCH).append("床");
+            sb = new StringBuilder(result.XSCH).append("床");
         }
 //		String time = getFormateTime(result.XSSJ);
 //		if (!EmptyTool.isBlank(time)) {

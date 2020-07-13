@@ -46,4 +46,9 @@ public class VisitPerson {
 	 */
 	public boolean isScanSlt;
 
+	/**
+	 * 显示床号
+	 */
+	public String XSCH;
+
 }
