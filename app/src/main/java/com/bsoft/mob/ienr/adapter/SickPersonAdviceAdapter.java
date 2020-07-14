@@ -21,7 +21,6 @@ import android.widget.TextView;
 
 import com.bsoft.mob.ienr.AppApplication;
 import com.bsoft.mob.ienr.R;
-import com.bsoft.mob.ienr.model.advice.AdviceConfig;
 import com.bsoft.mob.ienr.model.advice.AdvicePlanVo;
 import com.bsoft.mob.ienr.util.DateUtil;
 import com.bsoft.mob.ienr.util.StringUtil;
@@ -330,6 +329,11 @@ public class SickPersonAdviceAdapter extends BaseAdapter {
         if (!TextUtils.isEmpty(vo.JLXX)) {
             JL_DW = "(" + vo.JLXX + ")";
         }
+        //增加"医嘱执行"下的展示：使用频次
+        String SY_PC = "";
+        if (!TextUtils.isEmpty(vo.SYPC)) {
+            SY_PC = "(" + vo.SYPC + ")";
+        }
         if (AppApplication.getInstance().userConfig.qiYong_SY_LSBS_Show) {
             YZMCsb.append(ls);
         }
@@ -339,6 +343,8 @@ public class SickPersonAdviceAdapter extends BaseAdapter {
             //护理治疗不显示JLXX
             YZMCsb.append(JL_DW);
         }
+        //增加使用频次
+        YZMCsb.append(SY_PC);
         //
         if (vo.ZXWZ == 1) {
             YZMCsb.append("||").append("手术医嘱");
