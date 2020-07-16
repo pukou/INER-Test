@@ -332,7 +332,7 @@ public class SickPersonAdviceAdapter extends BaseAdapter {
         //增加"医嘱执行"下的展示：使用频次
         String SY_PC = "";
         if (!TextUtils.isEmpty(vo.SYPC)) {
-            SY_PC = "(" + vo.SYPC + ")";
+            SY_PC = vo.SYPC;
         }
         if (AppApplication.getInstance().userConfig.qiYong_SY_LSBS_Show) {
             YZMCsb.append(ls);
@@ -343,8 +343,6 @@ public class SickPersonAdviceAdapter extends BaseAdapter {
             //护理治疗不显示JLXX
             YZMCsb.append(JL_DW);
         }
-        //增加使用频次
-        YZMCsb.append(SY_PC);
         //
         if (vo.ZXWZ == 1) {
             YZMCsb.append("||").append("手术医嘱");
@@ -353,7 +351,8 @@ public class SickPersonAdviceAdapter extends BaseAdapter {
         Date date = DateUtil.getDateCompat(vo.JHSJ);
         String adviceTime = DateUtil.format_HHmm.format(date);
         String str = EmptyTool.isBlank(vo.SJMC) ? adviceTime : vo.SJMC;
-        vHolder.time.setText(str);
+        //增加使用频次(调整)
+        vHolder.time.setText(SY_PC.concat("  ").concat(str));
         vHolder.name.setText(YZMCsb.toString());
         vHolder.allName.setText(rawYzmcs);
         /*if (!(EmptyTool.isBlank(vo.JSGH) && EmptyTool.isBlank(vo.KSSJ))) {
