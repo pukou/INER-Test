@@ -710,7 +710,7 @@ public class BatchBloodSugarFragment extends LeftMenuItemFragment {
                 if (CCC != null && !CCC.isEmpty()) {
                     CCC.remove(0);
                 }
-                CCC.add("其他");
+//                CCC.add("其他"); 去除“其他”，重改血糖监测模块
                 mSpinnerFiterAdapter.refreshData(CCC);
             } else {
                 showMsgAndVoice(result.Msg);

@@ -682,7 +682,7 @@ public class BloodSugarFragment extends BaseUserFragment {
                 e.printStackTrace();
             }
             return BloodSugarApi.getInstance(getActivity()).AddBloodSugar(application.sickPersonVo.ZYH,
-                    application.getAreaId(), application.sickPersonVo.XSCH, sxsj,
+                    application.getAreaId(), application.sickPersonVo.BRCH, sxsj,
                     application.user.YHID, application.user.YHID, clsd, item.CLZ, application.jgId);
         }
 
