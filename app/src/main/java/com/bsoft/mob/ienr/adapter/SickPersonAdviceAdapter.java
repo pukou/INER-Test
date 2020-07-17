@@ -329,6 +329,10 @@ public class SickPersonAdviceAdapter extends BaseAdapter {
         if (!TextUtils.isEmpty(vo.JLXX)) {
             JL_DW = "(" + vo.JLXX + ")";
         }
+        String SL_DW = "";
+        if (!TextUtils.isEmpty(vo.SLXX)) {
+            SL_DW = "(" + vo.SLXX + ")";
+        }
         //增加"医嘱执行"下的展示：使用频次
         String SY_PC = "";
         if (!TextUtils.isEmpty(vo.SYPC)) {
@@ -341,7 +345,7 @@ public class SickPersonAdviceAdapter extends BaseAdapter {
         //
         if (vo.GSLX != 1) {
             //护理治疗不显示JLXX
-            YZMCsb.append(JL_DW);
+            YZMCsb.append(JL_DW).append(SL_DW);
         }
         //
         if (vo.ZXWZ == 1) {
