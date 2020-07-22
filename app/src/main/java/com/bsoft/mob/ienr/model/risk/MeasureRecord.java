@@ -59,4 +59,7 @@ public class MeasureRecord {
     public String SFPJ;
     //add 2018-05-02 20:33:56
 //    public String ZGQK;
+
+    //是否手动同步 by ling
+    public boolean CustomIsSync;
 }

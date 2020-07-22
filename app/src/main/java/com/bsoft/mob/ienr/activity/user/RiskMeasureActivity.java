@@ -103,6 +103,7 @@ public class RiskMeasureActivity extends BaseBarcodeActivity {
     private MeasureRecord mPreOneRecord;
     private List<RiskEvaluate> mEvaluate;
 
+    private boolean customIsSync;
 
     @Override
     public void initBarBroadcast() {
@@ -318,6 +319,19 @@ public class RiskMeasureActivity extends BaseBarcodeActivity {
         tv_mTime = (TextView) findViewById(R.id.id_tv_2_for_bar_image);
         iv_mSet = (ImageView) findViewById(R.id.id_iv_for_bar_image);
 
+        CheckBox id_cb_sp = (CheckBox)findViewById(R.id.id_cb_sp);
+        id_cb_sp.setText("同步");
+        id_cb_sp.setChecked(customIsSync);
+        id_cb_sp.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (buttonView == null || !buttonView.isPressed()) {
+                    //不响应非点击引起的改变
+                    return;
+                }
+                customIsSync = isChecked;
+            }
+        });
         tv_mNurse = (TextView) findViewById(R.id.riskmeasure_nurse);
         tv_state = (TextView) findViewById(R.id.riskevalute_state);
         tv_eNurse = (TextView) findViewById(R.id.riskevaluate_nurse);
@@ -1371,6 +1385,7 @@ public class RiskMeasureActivity extends BaseBarcodeActivity {
             mRecord.PGXH = pgxh;
             mRecord.CSGH = mAppApplication.user.YHID;
             mRecord.CSSJ = tv_mTime.getText().toString();
+            mRecord.CustomIsSync = customIsSync;
 
             String data = "";
             MeasureRecord measureRecord = new MeasureRecord();
@@ -1387,6 +1402,8 @@ public class RiskMeasureActivity extends BaseBarcodeActivity {
             //ADD 2018-7-3 14:29:11
             measureRecord.HSZQM = mRecord.HSZQM;
             measureRecord.HSZQMSJ = mRecord.HSZQMSJ;
+            // add 2020-7-21 21:29:33  by ling
+            measureRecord.CustomIsSync = mRecord.CustomIsSync;
 
             MeasureRecordPostData mRPostData = new MeasureRecordPostData();
             mRPostData.PGDH = pgdh;

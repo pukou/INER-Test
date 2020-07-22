@@ -33,6 +33,11 @@
             <TextView
                 android:id="@+id/risk_check"
                 style="@style/ClassicTextSecondary" />
+
+            <CheckBox
+                android:id="@+id/id_cb_sp"
+                style="@style/ClassicCheck"
+                tools:text="测试" />
         </LinearLayout>
 
         <include layout="@layout/layout_item_bar_image" />

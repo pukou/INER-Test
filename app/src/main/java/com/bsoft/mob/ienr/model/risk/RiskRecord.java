@@ -8,10 +8,9 @@
  */
 package com.bsoft.mob.ienr.model.risk;
 
-import java.util.List;
-
 import com.bsoft.mob.ienr.model.SelectResult;
-import com.bsoft.mob.ienr.model.SyncRecord;
+
+import java.util.List;
 
 /**
  * @ClassName: RiskRecord
@@ -69,5 +68,8 @@ public class RiskRecord {
 
 	// 同步数据
 	public SelectResult SyncData;
+
+	//是否手动同步 by ling
+	public boolean CustomIsSync;
 
 }

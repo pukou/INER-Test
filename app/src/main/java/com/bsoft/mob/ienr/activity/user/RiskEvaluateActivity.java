@@ -20,6 +20,8 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -95,6 +97,7 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
     private String hszqm1;
     private List<DEPGHBean> pgdList = new ArrayList<>();
 
+    private boolean customIsSync;
     @Override
     public void initBarBroadcast() {
     }
@@ -291,6 +294,19 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
         root = (LinearLayout) findViewById(R.id.risk_edit_root);
         tv_time = (TextView) findViewById(R.id.id_tv_2_for_bar_image);
         iv_time = (ImageView) findViewById(R.id.id_iv_for_bar_image);
+        CheckBox id_cb_sp = (CheckBox)findViewById(R.id.id_cb_sp);
+        id_cb_sp.setText("同步");
+        id_cb_sp.setChecked(customIsSync);
+        id_cb_sp.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (buttonView == null || !buttonView.isPressed()) {
+                    //不响应非点击引起的改变
+                    return;
+                }
+                customIsSync = isChecked;
+            }
+        });
         tv_check = (TextView) findViewById(R.id.risk_check);
         tv_goal = (TextView) findViewById(R.id.risk_edit_goal);
         tv_level = (TextView) findViewById(R.id.risk_edit_level);
@@ -585,6 +601,7 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
             record.BRCH = mAppApplication.sickPersonVo.XSCH;
             record.BRXM = mAppApplication.sickPersonVo.BRXM;
             record.BDMC = "评估";//todo
+            record.CustomIsSync = customIsSync;
             try {
                 RiskRecord riskRecord = new RiskRecord();
                 riskRecord.PGSJ = record.PGSJ;
@@ -594,6 +611,7 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
                 riskRecord.BRXM = record.BRXM;
                 riskRecord.BDMC = record.BDMC;
                 riskRecord.ZKMS = record.ZKMS;
+                riskRecord.CustomIsSync = record.CustomIsSync;
                 deRecordPostData.BQID = mAppApplication.getAreaId();
                 deRecordPostData.JGID = mAppApplication.jgId;
                 deRecordPostData.ZYH = mAppApplication.sickPersonVo.ZYH;
@@ -895,6 +913,7 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
             record.BRCH = mAppApplication.sickPersonVo.XSCH;
             record.BRXM = mAppApplication.sickPersonVo.BRXM;
             record.BDMC = "评估";//todo
+            record.CustomIsSync = customIsSync;
             try {
                 RiskRecord riskRecord = new RiskRecord();
                 riskRecord.PGSJ = record.PGSJ;
@@ -904,6 +923,7 @@ public class RiskEvaluateActivity extends BaseBarcodeActivity {
                 riskRecord.BRXM = record.BRXM;
                 riskRecord.BDMC = record.BDMC;
                 riskRecord.ZKMS = record.ZKMS;
+                riskRecord.CustomIsSync = record.CustomIsSync;
                 deRecordPostData.BQID = mAppApplication.getAreaId();
                 deRecordPostData.JGID = mAppApplication.jgId;
                 deRecordPostData.ZYH = mAppApplication.sickPersonVo.ZYH;

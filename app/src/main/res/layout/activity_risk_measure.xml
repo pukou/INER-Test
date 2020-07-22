@@ -26,6 +26,11 @@
         <TextView
             android:id="@+id/riskevalute_state"
             style="@style/ClassicTextSecondary" />
+
+        <CheckBox
+            android:id="@+id/id_cb_sp"
+            style="@style/ClassicCheck"
+            tools:text="测试" />
     </LinearLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
