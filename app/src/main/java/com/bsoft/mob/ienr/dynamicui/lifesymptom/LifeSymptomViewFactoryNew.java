@@ -953,6 +953,24 @@ public class LifeSymptomViewFactoryNew {
                         } catch (Exception e) {
                             return;
                         }
+                        if (inputText >= 38) {
+                            AlertDialog.Builder builder;
+                            builder = new AlertDialog.Builder(context);
+                            builder.setCustomTitle(ViewBuildHelper.buildDialogTitleTextView(context, "请注意，温度过高，增加体温监测次数"))
+//                                    .setSingleChoiceItems(adapter, -1, onClickListener)
+                                    .setNegativeButton("确认",
+                                            new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialog,
+                                                                    int id) {
+                                                }
+                                            });
+
+                            builder.setCancelable(false);
+                            AlertDialog dialog = builder.create();
+                            dialog.show();
+
+                        }
                         int value = lifeSignControlItem.getMaxMinStatue(inputText);
                         switch (value) {
                             case 1:
