@@ -221,12 +221,41 @@ public class RiskEvaluateViewFactory {
                                     goal += Integer.parseInt(factorGoal.PFFZ);
                                 }
                             } else {
-                                goal += Integer.parseInt(factorGoal.PFFZ);
+                                if (factor.YZSX != null && factor.YZSX.length() != 0) {
+                                    int csPFFZ = 0;
+                                    for (FactorGoal item : factor.YZPF) {
+                                        if (item.SELECT) {
+                                            csPFFZ += Integer.parseInt(item.PFFZ);
+                                        }
+                                    }
+                                    if (Integer.parseInt(factor.YZSX) >= csPFFZ) {
+                                        goal = goal - csPFFZ;
+                                    } else {
+                                        goal = goal - Integer.parseInt(factor.YZSX);
+                                    }
+
+                                    int zzPFFZ = 0;
+                                    factorGoal.SELECT = true;
+                                    for (FactorGoal item : factor.YZPF) {
+                                        if (item.SELECT) {
+                                            zzPFFZ += Integer.parseInt(item.PFFZ);
+                                        }
+                                    }
+                                    if (Integer.parseInt(factor.YZSX) >= zzPFFZ){
+                                        goal += zzPFFZ;
+                                    } else {
+                                        zzPFFZ = Integer.parseInt(factor.YZSX);
+                                        goal += zzPFFZ;
+                                    }
+                                } else {
+                                    goal += Integer.parseInt(factorGoal.PFFZ);
+                                }
+
                             }
 
                             ((RiskEvaluateActivity) context)
                                     .setGoalAndLevel(String.valueOf(goal));
-                            factorGoal.SELECT = true;
+//                            factorGoal.SELECT = true;
                         } else {
                             int p = (Integer) cb.getTag();
                             int goal = ((RiskEvaluateActivity) context)
@@ -235,8 +264,39 @@ public class RiskEvaluateViewFactory {
                             //福建协和客户化：IENR_FXYZPF.FZXH为288,195,290,291,289的选项，选中多个时只计算一个的分数
                             //思路：实现先减后加
                             FactorGoal factorGoal = factor.YZPF.get(p);
-                            goal -= Integer.parseInt(factorGoal.PFFZ);
-                            factorGoal.SELECT = false;
+                            if (factor.YZSX != null && factor.YZSX.length() != 0) {
+                                int csPFFZ = 0;
+                                for (FactorGoal item : factor.YZPF) {
+                                    if (item.SELECT) {
+                                        csPFFZ += Integer.parseInt(item.PFFZ);
+                                    }
+                                }
+                                if (Integer.parseInt(factor.YZSX) >= csPFFZ) {
+                                    goal -= csPFFZ;
+                                } else {
+                                    csPFFZ = Integer.parseInt(factor.YZSX);
+                                    goal -= csPFFZ;
+                                }
+//                                goal = goal - csPFFZ;
+                                int zzPFFZ = 0;
+                                factorGoal.SELECT = false;
+                                for (FactorGoal item : factor.YZPF) {
+                                    if (item.SELECT) {
+                                        zzPFFZ += Integer.parseInt(item.PFFZ);
+                                    }
+                                }
+                                if (Integer.parseInt(factor.YZSX) >= zzPFFZ) {
+                                    goal += zzPFFZ;
+                                } else {
+                                    zzPFFZ = Integer.parseInt(factor.YZSX);
+                                    goal += zzPFFZ;
+                                }
+//                                    zzPFFZ += Integer.parseInt(factorGoal.PFFZ);
+
+                            }else{
+                                    goal -= Integer.parseInt(factorGoal.PFFZ);
+                                }
+//                            factorGoal.SELECT = false;
                             String fxzh=String.valueOf(factorGoal.FZXH);
                             String onlyJsOnce = "288,195,290,291,289";//194 0
                             if (onlyJsOnce.contains(fxzh)) {

@@ -35,4 +35,10 @@ public class RiskFactor {
 
     // 因子评分
     public List<FactorGoal> YZPF;
+
+    // 分值上限(增加风险评估上下限)by ling
+    public String YZSX;
+
+    //分值下限
+    public String YZXX;
 }
